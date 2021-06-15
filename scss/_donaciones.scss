@@ -1,0 +1,123 @@
+
+*{
+  box-sizing: border-box;
+}
+
+.bodyDonaciones{
+  background-color: $backgroundLila;
+}
+
+
+
+.parrafoDonaciones {
+  @include parrafo;
+}
+
+.seccionParrafo{
+  margin: 70px 10px 30px 10px;
+  line-height: 0,7px;
+}
+
+.itemsDonaciones .metodosDePago .liBody {
+      list-style: circle;
+      color: $colorTitulos;
+      font-size: $textoParrafo;
+      font-family: 'Rubik', sans-serif;
+      text-transform: uppercase;
+      margin: 50px auto 50px auto;
+      width: 400px;
+      text-align: justify;
+      cursor: pointer;
+      line-height: 0,7px;
+    }
+
+
+  .liBody{
+    margin: 10px;          
+} 
+
+
+/////*logo pocas pulgas*////
+
+.logo{
+  @include logo;
+}
+
+
+.footerDonaciones {
+  @include footer;
+  margin: 60px auto 40px auto;
+}
+
+
+/////*Barra desplegable de perros y gatos*/////
+
+#barraDesplegable li>a{
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+
+}
+
+#barraDesplegable{
+  list-style: none;
+}
+
+#barraDesplegable li>a:hover{
+  color: black;
+  background-color: #eaeaea;
+
+}
+
+#barraDesplegable>li{
+  float: left;
+  text-align:center
+}
+
+#barraDesplegable>li>ul{
+  display: none;
+}
+
+#barraDesplegable>li:hover>ul {
+  display: block;
+}
+
+
+.enlaces {
+display:inline;
+color: $textoEnlaces;
+font-size: $textoEnlacesTamaño;
+font-family: 'Rubik', sans-serif;
+word-spacing: 60px;
+letter-spacing: 5px;
+margin: auto 35px;
+
+}
+
+a:visited{
+color:rgb(29, 27, 27);
+}
+
+
+////*Boostrap*/////
+
+.cardsContainer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.tituloGracias{
+  display: flex;
+  justify-content: center;
+  margin: 30px 5px 30px 5px;
+}
+
+.cardsContainer div img {
+  min-height: 300px;
+  object-fit: cover;
+}
+

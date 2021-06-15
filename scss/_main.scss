@@ -1,0 +1,393 @@
+
+
+ /*barra desplegable*/
+
+    .cabecera{
+        display:flex;
+        flex-direction:column;
+        flex-wrap:nowrap;
+        width:100%;
+        background-image: url(../Imagenes/Mascotas.jpg);
+        background-size: cover;
+        padding-bottom:20px;
+    }
+    .enlaces {
+      /*para que se ponga en linea*/
+      display:inline;
+      color:$colorVisited;
+      font-size: $textoEnlaces;
+      font-style: italic;
+      font-family: 'Rubik', sans-serif;
+      word-spacing: 60px;
+      letter-spacing: 5px;
+      margin: auto 35px;
+      
+}
+
+a:visited{
+    color: $colorVisited;
+}
+
+
+/*Primeras imagenes*/
+
+ .accesosDirectos {
+    margin: 70px 10px 70px 10px;
+    transition: height 2s;
+    
+ }
+
+ .image {
+    width: 430px;
+    height: 400px;
+    margin:calc(100%-50px);
+    object-fit: cover;
+      
+ }
+
+
+
+/*logo pocas pulgas*/
+
+ .logo{
+    @include logo;
+}
+
+
+/*cuerpo de la pagina*/
+
+body {
+    background-color: $backgroundLila;
+    background-size: 1400px;
+    background-repeat: no-repeat;
+
+}
+// main{
+    
+// }
+
+/*estilos para icono*/
+
+i{
+    font-size: 35px;
+    color:indigo;
+    
+}
+
+/*pequeño parrafo de pagina principal*/
+
+.parrafoPocasPulgas {
+    @include parrafo;
+    line-height: 0,7px;  
+}
+
+
+/*estilos para mi parrafo*/
+.contenedorParrafo {
+    @include contenedorParrafo;
+  
+}
+
+
+.donacionesPocasPulgas {
+    width: 100%;
+    margin: 40px auto 40px auto;
+    border: 5px double rgb(41, 38, 38);
+    object-fit: cover;
+    transition: height 2s;
+
+}
+
+.imgDonaciones{
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    transition: height 2s;
+}
+
+
+
+/*Flex box para la barra lateral (aside)*/
+
+aside ul li {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;   
+}
+
+
+
+.barraLateral { 
+    margin:0px;
+    width: 300px;
+    height: 250px;
+    float: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+ 
+}
+
+/*estilos para botones*/
+
+.botones{
+    width: 60px;
+    padding: 0%;
+    height: 40px;
+    text-align: center;
+}
+
+.botones li{
+    display:block;
+}   
+
+/*estilos para logos-iconos de las redes sociales*/
+
+.logosRedesSociales{
+    width: 100%;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+} 
+
+
+
+footer {
+   @include footer;
+   font-family: 'Rubik', sans-serif;
+}
+
+/*Barra desplegable de perros y gatos*/
+
+#barraDesplegable li>a{
+    background-color: grey;
+    color: white;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+
+.desplegable{
+    position:relative;
+    & div{
+    position:absolute;
+    }
+}
+
+ul{
+    list-style: none;
+}
+
+#barraDesplegable li>a:hover{
+    color: black;
+    background-color: #eaeaea;
+
+}
+
+#barraDesplegable>li{
+    float: left;
+    text-align:center
+}
+
+#barraDesplegable>li>ul{
+    display: none;
+}
+
+#barraDesplegable>li:hover>ul {
+    display: block;
+}
+
+
+/*mapa de llegada al refugio]*/
+
+.mapaDeLlegada {
+    display: flex;
+    justify-content: center;
+}
+
+/* MOBILE!!!!!!! */
+
+@media only screen and (max-with: 370px) {
+    /*ordinary css rules*/
+    body{
+        background-size: 10px;
+        background-repeat: no-repeat;
+    }
+}
+
+
+ 
+
+/* TABLET !!!!!*/
+@media only screen and (min-width: 375px) and (max-width: 961px) {
+    
+    /* body{
+       
+    } */
+}
+
+/* ESCRITORIO / DESKTOP!!!!! */
+@media only screen and (min-width: 961px){
+    /* body {
+        
+    } */
+
+}
+
+
+/* Transiciones*/
+
+.image:hover {
+    transition: all 0,2s ease;
+    transform: scale(1.1);
+}
+ 
+.icono1{
+    transition: all 1.5s linear;
+}
+
+.icono2{
+    
+    transition: all 1.5s ease-in;
+}
+
+.icono3{
+    
+    transition: all 1.5s ease-out;
+}
+
+.icono4{
+    
+    transition: all 1.5s ease-in-out;
+}
+
+.icono5{
+    
+    transition: all 1.5s ease;
+}
+
+.barraLateral:hover .icono1,
+.barraLateral:hover .icono2,
+.barraLateral:hover .icono3,
+.barraLateral:hover .icono4,
+.barraLateral:hover .icono5 {
+    transform: translateX(70px);
+
+}
+
+////*estilos para pagina Nosotros*/////
+
+h2 {
+   @include titulosPrincipales;
+  }
+
+/////*titulo mas grande*/////
+
+  h1 {
+  @include titulosPrincipales;
+  margin-top: none;
+  }
+
+  .parrafosNosotros{
+   @include parrafo;
+ }
+
+  .listaDesordenada {
+      list-style: circle;
+      color: rgb(22, 21, 21);
+    
+    }
+
+
+  .item{
+    margin: 10px;
+    display: block;
+    font-family: 'Rubik', sans-serif;
+    font-size: 20px;      
+} 
+
+.pequeñosParrafos{
+    @include pequeñosParrafos;
+}
+
+.itemParrafo{
+    @include parrafo;
+}
+
+.transitosPocasPulgas{
+    width: 300px;
+    height: 350px;
+}
+
+.parrafoTransitos{
+    font-family:'Rubik', sans-serif;
+    font-size: $textoParrafo; 
+    color: $colorVisited;
+}
+
+.tituloDonaciones{
+    font-family: 'Rubik', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/////*Nosotros*/////
+
+/*Boostrap*/
+
+#carouselExampleIndicators {
+    max-width: 600px;
+    display: flex;
+    justify-content: center;
+    max-height: 50%;
+    align-items: center;
+   
+    &.carousel{
+        @include carousel;
+    }
+
+    & .carouselBoot {
+        @include carousel;
+    }
+}
+
+.carouselBoot{
+    width: 50%;
+    margin: auto;
+    max-height: 50%;
+
+}
+
+.carousel-inner{
+    max-height: 50%;
+}
+
+.footerNosotros{
+    @include footer;
+}
+
+.bodyNosotros{
+    background-color: $backgroundLila;
+}
+
+/*Transiciones*/
+
+.donacionesPocasPulgas .imgDonaciones:hover{
+    border-radius:50%;
+    box-shadow: 0px 0px 15px 15px rgb(99, 16, 99);
+    transform: rotate(360deg);
+}
+
+.primerTituloImagenes{
+    @include titulosPrincipales;
+    color: $colorTitulos;
+    display: flex;
+    justify-content: center;
+   
+}
+

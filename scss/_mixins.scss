@@ -1,0 +1,63 @@
+@mixin parrafo{
+    
+        font-family: 'Caveat', cursive;
+        font-size: $textoParrafo;
+        word-spacing: 5px;
+        line-height: 25px;
+        color: $colorTexto;
+        text-decoration: wavy;
+        font-family: 'Caveat', cursive;
+        clear: left;
+    
+}
+
+@mixin titulosPrincipales{
+    font-size: $titulosPrincipales;
+    color: $colorTitulos;
+    font-family: 'Caveat', cursive;
+
+}
+
+@mixin contenedorParrafo{
+    border-top: 3px dashed rgb(36, 33, 33) ;
+    border-bottom: 3px dashed rgb(36, 33, 33);
+    object-fit: cover;
+    display: flex;
+    justify-content: right;
+    height: 250px;
+ 
+}
+
+@mixin pequeñosParrafos {
+    margin: 50px 10px 50px 10px;
+    display: inline;
+    
+}
+
+@mixin carousel{
+    display: flex;
+    justify-content: center;
+    
+}
+
+@mixin otrosTitulos{
+    font-size: $textoParrafo;
+    color: $colorTexto;
+    margin: 70px auto 2px auto;
+    width: 66%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+@mixin logo {
+    width: 200px; height: 160px;
+    border-radius: 70%;
+    margin: 20px;
+    object-fit: cover;
+    cursor: pointer;
+}
+
+@mixin footer{
+    display: flex;
+    justify-content: center;
+}

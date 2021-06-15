@@ -1,0 +1,120 @@
+
+
+/////*logo*/////
+.logo{
+   @include logo;
+}
+
+
+/////*Barra desplegable de perros y gatos*/////
+
+#barraDesplegable li>a{
+    background-color: grey;
+    color: white;
+    padding: 10px;
+    display: block;
+    text-decoration: none;
+    min-width: 100px;
+}
+
+ul{
+    list-style: none;
+}
+
+#barraDesplegable li>a:hover{
+    color: black;
+    background-color: #eaeaea;
+
+}
+
+#barraDesplegable>li{
+    float: left;
+    text-align:center
+}
+
+#barraDesplegable>li>ul{
+    display: none;
+}
+
+#barraDesplegable>li:hover>ul {
+    display: block;
+}
+
+
+/////*parrafo*/////
+p {
+    @include parrafo;
+    font-family: Helvetica;
+    
+}
+
+/////*TITULOS*/////
+h2 {
+    @include titulosPrincipales;
+    margin-top: 80px;
+}
+
+h3 {
+    @include otrosTitulos;
+    background-color: $backgroundLila;
+  
+}
+
+
+/////*lista dentro de recuadro*/////
+
+.nuestrasAdopcionesLista{
+    border: 5px solid rgb(36, 33, 33) ;
+    width: 66%;
+    margin: auto;
+    padding: 40px;
+    border-radius: 10px;
+}
+
+ .itemLista{
+    font-family: Arial, Helvetica, sans-serif; 
+    font-size: 15px;   
+    word-spacing: 5px; 
+    line-height: 25px; 
+    color:rgb(34, 32, 32); 
+    text-decoration: wavy;
+    font-family: Helvetica;
+
+  }
+
+
+  //////*pie de pagina*/////
+
+  footer {
+  @include footer;
+}
+
+
+
+.listaDentroRecuadro {
+    border: 5px solid rgb(36, 33, 33) ;
+    width: 66%;
+    margin: auto;
+    border-radius: 10px;
+}
+
+
+ /////*barra desplegable*/////
+
+  .enlaces {
+  display:inline;
+  color: rgb(22, 05, 50);
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  word-spacing: 60px;
+  letter-spacing: 5px;
+  margin: auto 35px;
+  
+  }
+  
+  a:visited{
+  color:rgb(29, 27, 27);
+  }
+  

@@ -1,0 +1,1198 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*barra desplegable*/
+.cabecera {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  width: 100%;
+  background-image: url(../Imagenes/Mascotas.jpg);
+  background-size: cover;
+  padding-bottom: 20px;
+}
+
+.enlaces {
+  /*para que se ponga en linea*/
+  display: inline;
+  color: #160532;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  word-spacing: 60px;
+  letter-spacing: 5px;
+  margin: auto 35px;
+}
+
+a:visited {
+  color: #1d1b1b;
+}
+
+/*Primeras imagenes*/
+.accesosDirectos {
+  margin: 70px 10px 70px 10px;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+
+.image {
+  width: 430px;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*logo pocas pulgas*/
+.logo {
+  width: 200px;
+  height: 160px;
+  border-radius: 70%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+/*cuerpo de la pagina*/
+body {
+  background-color: #b695c0;
+  background-size: 1400px;
+  background-repeat: no-repeat;
+}
+
+/*estilos para icono*/
+i {
+  font-size: 35px;
+  color: indigo;
+}
+
+/*pequeño parrafo de pagina principal*/
+.parrafoPocasPulgas {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  color: #222020;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: Helvetica;
+  clear: left;
+}
+
+/*estilos para mi parrafo*/
+.contenedorParrafo {
+  border-top: 3px dashed #242121;
+  border-bottom: 3px dashed #242121;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right;
+  height: 250px;
+}
+
+.donacionesPocasPulgas {
+  width: 100%;
+  margin: 40px auto 40px auto;
+  border: 5px double #292626;
+  -o-object-fit: cover;
+     object-fit: cover;
+  /* display:inline-block; */
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+
+.imgDonaciones {
+  width: 400px;
+  height: 200px;
+  display: inline-block;
+  margin: 10px;
+  -webkit-transition: height 2s;
+  transition: height 2s;
+}
+
+/*Flex box para la barra lateral (aside)*/
+aside ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.barraLateral {
+  margin: 0px;
+  width: 300px;
+  height: 250px;
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*estilos para botones*/
+.botones {
+  width: 60px;
+  padding: 0%;
+  height: 40px;
+  text-align: center;
+}
+
+.botones li {
+  display: block;
+}
+
+/*estilos para logos-iconos de las redes sociales*/
+.logosRedesSociales {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+/*Barra desplegable de perros y gatos*/
+#barraDesplegable li > a {
+  background-color: grey;
+  color: white;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+.desplegable {
+  position: relative;
+}
+
+.desplegable div {
+  position: absolute;
+}
+
+ul {
+  list-style: none;
+}
+
+#barraDesplegable li > a:hover {
+  color: black;
+  background-color: #eaeaea;
+}
+
+#barraDesplegable > li {
+  float: left;
+  text-align: center;
+}
+
+#barraDesplegable > li > ul {
+  display: none;
+}
+
+#barraDesplegable > li:hover > ul {
+  display: block;
+}
+
+/*mapa de llegada al refugio]*/
+.mapaDeLlegada {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/* MOBILE!!!!!!! */
+@media only screen and (max-with: 370px) {
+  /*ordinary css rules*/
+  body {
+    background-size: 10px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* TABLET !!!!!*/
+@media only screen and (min-width: 375px) and (max-width: 961px) {
+  /* body{
+       
+    } */
+}
+
+/* ESCRITORIO / DESKTOP!!!!! */
+@media only screen and (min-width: 961px) {
+  /* body {
+        
+    } */
+}
+
+.image:hover {
+  -webkit-transition: all 0,2s ease;
+  transition: all 0,2s ease;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.icono1 {
+  -webkit-transition: all 1.5s linear;
+  transition: all 1.5s linear;
+}
+
+.icono2 {
+  -webkit-transition: all 1.5s ease-in;
+  transition: all 1.5s ease-in;
+}
+
+.icono3 {
+  -webkit-transition: all 1.5s ease-out;
+  transition: all 1.5s ease-out;
+}
+
+.icono4 {
+  -webkit-transition: all 1.5s ease-in-out;
+  transition: all 1.5s ease-in-out;
+}
+
+.icono5 {
+  -webkit-transition: all 1.5s ease;
+  transition: all 1.5s ease;
+}
+
+.barraLateral:hover .icono1,
+.barraLateral:hover .icono2,
+.barraLateral:hover .icono3,
+.barraLateral:hover .icono4,
+.barraLateral:hover .icono5 {
+  -webkit-transform: translateX(70px);
+          transform: translateX(70px);
+}
+
+/*estilos para pagina Nosotros*/
+h2 {
+  font-size: 30px;
+  color: #a728a7;
+}
+
+/*titulo mas grande*/
+h1 {
+  font-size: 30px;
+  color: #a728a7;
+}
+
+.parrafosNosotros {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  color: #222020;
+}
+
+.listaDesordenada {
+  list-style: circle;
+  color: #161515;
+}
+
+.item {
+  margin: 10px;
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.pequeñosParrafos {
+  margin: 50px 10px 50px 10px;
+  display: inline;
+}
+
+.itemParrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  color: #222020;
+}
+
+.transitosPocasPulgas {
+  width: 300px;
+  height: 350px;
+}
+
+.parrafoTransitos {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 25px;
+  color: #222020;
+}
+
+.tituloDonaciones {
+  font-family: Arial, Helvetica, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Nosotros*/
+#carouselExampleIndicators {
+  max-width: 600px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.carouselBoot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.bodyNosotros {
+  background-color: #bf84dd;
+}
+
+.donacionesPocasPulgas .imgDonaciones:hover {
+  border-radius: 50%;
+  -webkit-box-shadow: 0px 0px 15px 15px #631063;
+          box-shadow: 0px 0px 15px 15px #631063;
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: red;
+  color: blue;
+  color: green;
+}
+
+/*logo que me redirecciona a la pagina principal*/
+.logo {
+  width: 200px;
+  height: 160px;
+  border-radius: 70%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+h2 {
+  font-size: 30px;
+  color: #a728a7;
+}
+
+/*titulo mas grande*/
+h1 {
+  font-size: 30px;
+  color: #a728a7;
+  margin-top: 90px;
+}
+
+/*parrafo informativo*/
+.primerParrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  color: #222020;
+}
+
+.segundoParrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  color: #222020;
+}
+
+.tercerParrafo {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  color: #222020;
+}
+
+/*imagen*/
+.perrito {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*pie de pagina*/
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+/*Barra desplegable de perros y gatos*/
+#barraDesplegable li > a {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+#barraDesplegable li > a:hover {
+  color: black;
+  background-color: #eaeaea;
+}
+
+#barraDesplegable > li {
+  float: left;
+  text-align: center;
+}
+
+#barraDesplegable > li > ul {
+  display: none;
+}
+
+#barraDesplegable > li:hover > ul {
+  display: block;
+}
+
+/*barra desplegable*/
+.enlaces {
+  /*para que se ponga en linea*/
+  display: inline;
+  color: #160532;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  word-spacing: 60px;
+  letter-spacing: 5px;
+  margin: auto 35px;
+}
+
+a:visited {
+  color: #1d1b1b;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.parrafoDonaciones {
+  display: block;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  text-align: center;
+  color: #222020;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: Helvetica;
+}
+
+.seccionParrafo {
+  margin: 150px 10px 30px 10px;
+}
+
+.itemsDonaciones .metodosDePago .liBody {
+  list-style: circle;
+  color: #9b229b;
+  font-size: 22px;
+  font-style: italic;
+  font-family: Arial;
+  text-transform: uppercase;
+  margin: 50px auto 50px auto;
+  width: 400px;
+  text-align: justify;
+  cursor: pointer;
+}
+
+.liBody {
+  margin: 10px;
+}
+
+/*logo pocas pulgas*/
+.logo {
+  width: 200px;
+  height: 160px;
+  border-radius: 70%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+/*Barra desplegable de perros y gatos*/
+#barraDesplegable li > a {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+#barraDesplegable {
+  list-style: none;
+}
+
+#barraDesplegable li > a:hover {
+  color: black;
+  background-color: #eaeaea;
+}
+
+#barraDesplegable > li {
+  float: left;
+  text-align: center;
+}
+
+#barraDesplegable > li > ul {
+  display: none;
+}
+
+#barraDesplegable > li:hover > ul {
+  display: block;
+}
+
+/*barra desplegable*/
+.enlaces {
+  /*para que se ponga en linea*/
+  display: inline;
+  color: #160532;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  word-spacing: 60px;
+  letter-spacing: 5px;
+  margin: auto 35px;
+}
+
+a:visited {
+  color: #1d1b1b;
+}
+
+.cardsContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.tituloGracias {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 30px 5px 30px 5px;
+}
+
+.cardsContainer div img {
+  min-height: 300px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*Estilos para el logo*/
+.logo {
+  width: 200px;
+  height: 160px;
+  border-radius: 100%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Estilos para el pequeño parrafo de presentacion*/
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  text-align: center;
+  color: #222020;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: Helvetica;
+}
+
+/*titulo*/
+h1 {
+  font-size: 30px;
+  color: #a728a7;
+}
+
+/*pie de pagina*/
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 200px;
+}
+
+/*Fotos de gatos en adopcion aplicadas con Grid*/
+.gatosEnAdopcion {
+  width: 100%;
+  height: 800px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px 250px;
+      grid-template-columns: 250px 250px 250px;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 10px 50px 10px;
+}
+
+.fotosGatos {
+  width: 100%;
+  height: 100%;
+}
+
+#gato1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#gato2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#gato3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#gato4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#gato5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#gato6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#gato7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+#gato8 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+#gato9 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.enlaces {
+  display: inline;
+  color: #160532;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  word-spacing: 60px;
+  letter-spacing: 5px;
+  margin: auto 35px;
+}
+
+a:visited {
+  color: #1d1b1b;
+}
+
+/*Barra desplegable de perros y gatos*/
+#barraDesplegable li > a {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+#barraDesplegable li > a:hover {
+  color: black;
+  background-color: #eaeaea;
+}
+
+#barraDesplegable > li {
+  float: left;
+  text-align: center;
+}
+
+#barraDesplegable > li > ul {
+  display: none;
+}
+
+#barraDesplegable > li:hover > ul {
+  display: block;
+}
+
+/*Imagen de cabecera*/
+.gatosEnAdopcion img:hover {
+  -webkit-filter: saturate(180%);
+          filter: saturate(180%);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+/*estilos para el logo*/
+.logo {
+  width: 200px;
+  height: 160px;
+  border-radius: 100%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Estilos para el pequeño parrafo de presentacion*/
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  text-align: center;
+  color: #222020;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: Helvetica;
+}
+
+/*titulo*/
+h1 {
+  font-size: 30px;
+  color: #a728a7;
+}
+
+/*pie de pagina*/
+footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 500px;
+}
+
+/*barra desplegable*/
+.enlaces {
+  /*para que se ponga en linea*/
+  display: inline;
+  color: #160532;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  word-spacing: 60px;
+  letter-spacing: 5px;
+  margin: auto 35px;
+}
+
+a:visited {
+  color: #1d1b1b;
+}
+
+/*Barra desplegable de perros y gatos*/
+#barraDesplegable li > a {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+#barraDesplegable li > a:hover {
+  color: black;
+  background-color: #eaeaea;
+}
+
+#barraDesplegable > li {
+  float: left;
+  text-align: center;
+}
+
+#barraDesplegable > li > ul {
+  display: none;
+}
+
+#barraDesplegable > li:hover > ul {
+  display: block;
+}
+
+.perrosEnAdopcion {
+  width: 100%;
+  height: 800px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 250px 250px 250px;
+      grid-template-columns: 250px 250px 250px;
+  -ms-grid-rows: (1fr)[3];
+      grid-template-rows: repeat(3, 1fr);
+  grid-gap: 5px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 10px 50px 10px;
+}
+
+.cachorrosGrid {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+#cachorro1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#cachorro2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#cachorro3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#gato4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#cachorro5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#cachorro6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#cachorro7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+#cachorro8 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+#cachorro9 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+.perrosEnAdopcion img:hover {
+  -webkit-filter: saturate(180%);
+          filter: saturate(180%);
+}
+
+/*logo*/
+.logo {
+  width: 200px;
+  height: 160px;
+  border-radius: 100%;
+  margin: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+/*Barra desplegable de perros y gatos*/
+#barraDesplegable li > a {
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+ul {
+  list-style: none;
+}
+
+#barraDesplegable li > a:hover {
+  color: black;
+  background-color: #eaeaea;
+}
+
+#barraDesplegable > li {
+  float: left;
+  text-align: center;
+}
+
+#barraDesplegable > li > ul {
+  display: none;
+}
+
+#barraDesplegable > li:hover > ul {
+  display: block;
+}
+
+/*parrafo*/
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  word-spacing: 5px;
+  line-height: 25px;
+  text-align: center;
+  color: #222020;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: Helvetica;
+}
+
+/*titulo grande*/
+h2 {
+  font-size: 30px;
+  color: #a728a7;
+  margin-top: 80px;
+}
+
+h3 {
+  font-size: 20px;
+  color: #2c2727;
+  margin: 70px auto 2px auto;
+  width: 66%;
+  background-color: #a728a7;
+  text-align: center;
+  border-radius: 10px;
+}
+
+/*lista dentro de recuadro*/
+.nuestrasAdopcionesLista {
+  border: 5px solid #242121;
+  width: 66%;
+  margin: auto;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.itemLista {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 15px;
+  word-spacing: 5px;
+  line-height: 25px;
+  color: #222020;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: Helvetica;
+}
+
+/*pie de pagina*/
+footer {
+  width: 100%;
+  text-align: center;
+}
+
+.listaDentroRecuadro {
+  border: 5px solid #242121;
+  width: 66%;
+  margin: auto;
+  border-radius: 10px;
+}
+
+/*barra desplegable*/
+.enlaces {
+  /*para que se ponga en linea*/
+  display: inline;
+  color: #160532;
+  font-size: 15px;
+  font-weight: bold;
+  font-style: italic;
+  font-family: Arial;
+  word-spacing: 60px;
+  letter-spacing: 5px;
+  margin: auto 35px;
+}
+
+a:visited {
+  color: #1d1b1b;
+}
+/*# sourceMappingURL=style.css.map */

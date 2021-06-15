@@ -1,0 +1,106 @@
+* {
+ box-sizing: border-box;
+
+}
+
+/*logo que me redirecciona a la pagina principal*/
+.logo{
+    @include logo;
+  }
+
+/*Titulo mas pequeño*/
+h2 {
+    @include titulosPrincipales;
+  }
+
+
+/*titulo mas grande*/
+
+  h1 {
+    @include titulosPrincipales;
+    margin-top: 90px;
+  }
+
+
+  /*parrafo informativo*/
+
+  .primerParrafo{
+    @include parrafo;
+  }
+
+  .segundoParrafo{
+    @include parrafo;
+  }
+
+  .tercerParrafo{
+    @include parrafo;
+  }
+
+
+  /*imagen*/
+
+  .perrito{
+    display: flex;
+    justify-content: center;
+}
+
+    /*pie de pagina*/
+
+    footer {
+     @include footer;
+  }
+
+
+  
+/*Barra desplegable de perros y gatos*/
+
+#barraDesplegable li>a{
+  background-color: grey;
+  color: white;
+  padding: 10px;
+  display: block;
+  text-decoration: none;
+  min-width: 100px;
+}
+
+ul{
+  list-style: none;
+}
+
+#barraDesplegable li>a:hover{
+  color: black;
+  background-color: #eaeaea;
+
+}
+
+#barraDesplegable>li{
+  float: left;
+  text-align:center
+}
+
+#barraDesplegable>li>ul{
+  display: none;
+}
+
+#barraDesplegable>li:hover>ul {
+  display: block;
+}
+
+
+ /*barra desplegable*/
+
+.enlaces {
+/*para que se ponga en linea*/
+display:inline;
+color: $textoEnlaces;
+font-size: $textoEnlacesTamaño;
+font-family: 'Rubik', sans-serif;
+word-spacing: 60px;
+letter-spacing: 5px;
+margin: auto 35px;
+
+}
+
+a:visited{
+color:rgb(29, 27, 27);
+}
