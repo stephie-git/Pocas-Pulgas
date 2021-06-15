@@ -1,4 +1,0 @@
-if (self.CavalryLogger) { CavalryLogger.start_js(["kcA3Mrl"]); }
-
-__d("CometPhotoAlbumCreateQuery$Parameters",[],(function(a,b,c,d,e,f){"use strict";a={kind:"PreloadableConcreteRequest",params:{id:"3900930926595906",metadata:{},name:"CometPhotoAlbumCreateQuery",operationKind:"query",text:null}};e.exports=a}),null);
-__d("CometPhotoAlbumCreateRoot.entrypoint",["CometPhotoAlbumCreateQuery$Parameters","JSResourceForInteraction","WebPixelRatio"],(function(a,b,c,d,e,f,g){"use strict";a={getPreloadProps:function(){return{queries:{CometPhotoAlbumCreateQueryReference:{parameters:b("CometPhotoAlbumCreateQuery$Parameters"),variables:{privacySelectorRenderLocation:"COMET_ALBUM",scale:d("WebPixelRatio").get()}}}}},root:c("JSResourceForInteraction")("CometPhotoAlbumCreateRoot.react").__setRef("CometPhotoAlbumCreateRoot.entrypoint")};e=a;g["default"]=e}),98);
