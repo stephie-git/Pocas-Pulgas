@@ -1,9 +1,4 @@
 @charset "UTF-8";
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
 /*barra desplegable*/
 .cabecera {
   display: -webkit-box;
@@ -24,11 +19,10 @@
 .enlaces {
   /*para que se ponga en linea*/
   display: inline;
-  color: #160532;
-  font-size: 15px;
-  font-weight: bold;
+  color: #1d1b1b;
+  font-size: #160532;
   font-style: italic;
-  font-family: Arial;
+  font-family: 'Rubik', sans-serif;
   word-spacing: 60px;
   letter-spacing: 5px;
   margin: auto 35px;
@@ -48,6 +42,7 @@ a:visited {
 .image {
   width: 430px;
   height: 400px;
+  margin: calc(100%-50px);
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -78,15 +73,16 @@ i {
 
 /*pequeño parrafo de pagina principal*/
 .parrafoPocasPulgas {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  color: #222020;
+  color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: Helvetica;
+  font-family: 'Caveat', cursive;
   clear: left;
+  line-height: 0,7px;
 }
 
 /*estilos para mi parrafo*/
@@ -110,7 +106,6 @@ i {
   border: 5px double #292626;
   -o-object-fit: cover;
      object-fit: cover;
-  /* display:inline-block; */
   -webkit-transition: height 2s;
   transition: height 2s;
 }
@@ -173,6 +168,7 @@ aside ul li {
 /*estilos para logos-iconos de las redes sociales*/
 .logosRedesSociales {
   width: 100%;
+  height: 800px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -184,8 +180,13 @@ aside ul li {
 }
 
 footer {
-  width: 100%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: 'Rubik', sans-serif;
 }
 
 /*Barra desplegable de perros y gatos*/
@@ -260,6 +261,7 @@ ul {
     } */
 }
 
+/* Transiciones*/
 .image:hover {
   -webkit-transition: all 0,2s ease;
   transition: all 0,2s ease;
@@ -301,24 +303,29 @@ ul {
           transform: translateX(70px);
 }
 
-/*estilos para pagina Nosotros*/
 h2 {
   font-size: 30px;
   color: #a728a7;
+  font-family: 'Caveat', cursive;
 }
 
-/*titulo mas grande*/
 h1 {
   font-size: 30px;
   color: #a728a7;
+  font-family: 'Caveat', cursive;
+  margin-top: none;
 }
 
 .parrafosNosotros {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  color: #222020;
+  color: #2c2727;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: 'Caveat', cursive;
+  clear: left;
 }
 
 .listaDesordenada {
@@ -329,7 +336,7 @@ h1 {
 .item {
   margin: 10px;
   display: block;
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 20px;
 }
 
@@ -339,11 +346,15 @@ h1 {
 }
 
 .itemParrafo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  color: #222020;
+  color: #2c2727;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: 'Caveat', cursive;
+  clear: left;
 }
 
 .transitosPocasPulgas {
@@ -352,13 +363,13 @@ h1 {
 }
 
 .parrafoTransitos {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
   font-size: 25px;
-  color: #222020;
+  color: #1d1b1b;
 }
 
 .tituloDonaciones {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Rubik', sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -367,7 +378,7 @@ h1 {
           justify-content: center;
 }
 
-/*Nosotros*/
+/*Boostrap*/
 #carouselExampleIndicators {
   max-width: 600px;
   display: -webkit-box;
@@ -376,9 +387,22 @@ h1 {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  max-height: 50%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
-.carousel {
+#carouselExampleIndicators.carousel {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#carouselExampleIndicators .carouselBoot {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -388,6 +412,16 @@ h1 {
 }
 
 .carouselBoot {
+  width: 50%;
+  margin: auto;
+  max-height: 50%;
+}
+
+.carousel-inner {
+  max-height: 50%;
+}
+
+.footerNosotros {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -397,9 +431,10 @@ h1 {
 }
 
 .bodyNosotros {
-  background-color: #bf84dd;
+  background-color: #b695c0;
 }
 
+/*Transiciones*/
 .donacionesPocasPulgas .imgDonaciones:hover {
   border-radius: 50%;
   -webkit-box-shadow: 0px 0px 15px 15px #631063;
@@ -408,12 +443,22 @@ h1 {
           transform: rotate(360deg);
 }
 
+.primerTituloImagenes {
+  font-size: 30px;
+  color: #a728a7;
+  font-family: 'Caveat', cursive;
+  color: #a728a7;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  color: red;
-  color: blue;
-  color: green;
 }
 
 /*logo que me redirecciona a la pagina principal*/
@@ -424,43 +469,59 @@ h1 {
   margin: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
+/*Titulo mas pequeño*/
 h2 {
   font-size: 30px;
   color: #a728a7;
+  font-family: 'Caveat', cursive;
 }
 
 /*titulo mas grande*/
 h1 {
   font-size: 30px;
   color: #a728a7;
+  font-family: 'Caveat', cursive;
   margin-top: 90px;
 }
 
 /*parrafo informativo*/
 .primerParrafo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  color: #222020;
+  color: #2c2727;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: 'Caveat', cursive;
+  clear: left;
 }
 
 .segundoParrafo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  color: #222020;
+  color: #2c2727;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: 'Caveat', cursive;
+  clear: left;
 }
 
 .tercerParrafo {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  color: #222020;
+  color: #2c2727;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+  font-family: 'Caveat', cursive;
+  clear: left;
 }
 
 /*imagen*/
@@ -475,7 +536,6 @@ h1 {
 
 /*pie de pagina*/
 footer {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -522,9 +582,7 @@ ul {
   display: inline;
   color: #160532;
   font-size: 15px;
-  font-weight: bold;
-  font-style: italic;
-  font-family: Arial;
+  font-family: 'Rubik', sans-serif;
   word-spacing: 60px;
   letter-spacing: 5px;
   margin: auto 35px;
@@ -539,41 +597,44 @@ a:visited {
           box-sizing: border-box;
 }
 
+.bodyDonaciones {
+  background-color: #b695c0;
+}
+
 .parrafoDonaciones {
-  display: block;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  text-align: center;
-  color: #222020;
+  color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: Helvetica;
+  font-family: 'Caveat', cursive;
+  clear: left;
 }
 
 .seccionParrafo {
-  margin: 150px 10px 30px 10px;
+  margin: 70px 10px 30px 10px;
+  line-height: 0,7px;
 }
 
 .itemsDonaciones .metodosDePago .liBody {
   list-style: circle;
-  color: #9b229b;
-  font-size: 22px;
-  font-style: italic;
-  font-family: Arial;
+  color: #a728a7;
+  font-size: 25px;
+  font-family: 'Rubik', sans-serif;
   text-transform: uppercase;
   margin: 50px auto 50px auto;
   width: 400px;
   text-align: justify;
   cursor: pointer;
+  line-height: 0,7px;
 }
 
 .liBody {
   margin: 10px;
 }
 
-/*logo pocas pulgas*/
 .logo {
   width: 200px;
   height: 160px;
@@ -584,12 +645,16 @@ a:visited {
   cursor: pointer;
 }
 
-footer {
-  width: 100%;
-  text-align: center;
+.footerDonaciones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 60px auto 40px auto;
 }
 
-/*Barra desplegable de perros y gatos*/
 #barraDesplegable li > a {
   background-color: grey;
   color: white;
@@ -621,15 +686,11 @@ footer {
   display: block;
 }
 
-/*barra desplegable*/
 .enlaces {
-  /*para que se ponga en linea*/
   display: inline;
   color: #160532;
   font-size: 15px;
-  font-weight: bold;
-  font-style: italic;
-  font-family: Arial;
+  font-family: 'Rubik', sans-serif;
   word-spacing: 60px;
   letter-spacing: 5px;
   margin: auto 35px;
@@ -674,47 +735,36 @@ a:visited {
 .logo {
   width: 200px;
   height: 160px;
-  border-radius: 100%;
+  border-radius: 70%;
   margin: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
 /*Estilos para el pequeño parrafo de presentacion*/
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  text-align: center;
-  color: #222020;
+  color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: Helvetica;
+  font-family: 'Caveat', cursive;
+  clear: left;
 }
 
 /*titulo*/
 h1 {
   font-size: 30px;
   color: #a728a7;
-}
-
-/*pie de pagina*/
-footer {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-top: 200px;
+  font-family: 'Caveat', cursive;
 }
 
 /*Fotos de gatos en adopcion aplicadas con Grid*/
 .gatosEnAdopcion {
   width: 100%;
-  height: 800px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 250px 250px 250px;
@@ -819,8 +869,7 @@ footer {
   color: #160532;
   font-size: 15px;
   font-weight: bold;
-  font-style: italic;
-  font-family: Arial;
+  font-family: 'Rubik', sans-serif;
   word-spacing: 60px;
   letter-spacing: 5px;
   margin: auto 35px;
@@ -862,10 +911,19 @@ ul {
   display: block;
 }
 
-/*Imagen de cabecera*/
 .gatosEnAdopcion img:hover {
   -webkit-filter: saturate(180%);
           filter: saturate(180%);
+}
+
+/*pie de pagina*/
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 * {
@@ -873,50 +931,44 @@ ul {
           box-sizing: border-box;
 }
 
-/*estilos para el logo*/
 .logo {
   width: 200px;
   height: 160px;
-  border-radius: 100%;
+  border-radius: 70%;
   margin: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
-/*Estilos para el pequeño parrafo de presentacion*/
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  text-align: center;
-  color: #222020;
+  color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: Helvetica;
+  font-family: 'Caveat', cursive;
+  clear: left;
 }
 
-/*titulo*/
 h1 {
   font-size: 30px;
   color: #a728a7;
+  font-family: 'Caveat', cursive;
 }
 
-/*pie de pagina*/
 footer {
-  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 500px;
 }
 
-/*barra desplegable*/
 .enlaces {
-  /*para que se ponga en linea*/
   display: inline;
   color: #160532;
   font-size: 15px;
@@ -932,7 +984,6 @@ a:visited {
   color: #1d1b1b;
 }
 
-/*Barra desplegable de perros y gatos*/
 #barraDesplegable li > a {
   background-color: grey;
   color: white;
@@ -966,7 +1017,6 @@ ul {
 
 .perrosEnAdopcion {
   width: 100%;
-  height: 800px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 250px 250px 250px;
@@ -1073,17 +1123,26 @@ ul {
           filter: saturate(180%);
 }
 
-/*logo*/
+.footerPerros {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 50px;
+}
+
 .logo {
   width: 200px;
   height: 160px;
-  border-radius: 100%;
+  border-radius: 70%;
   margin: 20px;
   -o-object-fit: cover;
      object-fit: cover;
+  cursor: pointer;
 }
 
-/*Barra desplegable de perros y gatos*/
 #barraDesplegable li > a {
   background-color: grey;
   color: white;
@@ -1115,37 +1174,36 @@ ul {
   display: block;
 }
 
-/*parrafo*/
 p {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 20px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
-  text-align: center;
-  color: #222020;
+  color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
+  font-family: 'Caveat', cursive;
+  clear: left;
   font-family: Helvetica;
 }
 
-/*titulo grande*/
 h2 {
   font-size: 30px;
   color: #a728a7;
+  font-family: 'Caveat', cursive;
   margin-top: 80px;
 }
 
 h3 {
-  font-size: 20px;
+  font-size: 25px;
   color: #2c2727;
   margin: 70px auto 2px auto;
   width: 66%;
-  background-color: #a728a7;
   text-align: center;
   border-radius: 10px;
+  background-color: #b695c0;
 }
 
-/*lista dentro de recuadro*/
 .nuestrasAdopcionesLista {
   border: 5px solid #242121;
   width: 66%;
@@ -1165,10 +1223,13 @@ h3 {
   font-family: Helvetica;
 }
 
-/*pie de pagina*/
 footer {
-  width: 100%;
-  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .listaDentroRecuadro {
@@ -1178,9 +1239,7 @@ footer {
   border-radius: 10px;
 }
 
-/*barra desplegable*/
 .enlaces {
-  /*para que se ponga en linea*/
   display: inline;
   color: #160532;
   font-size: 15px;
@@ -1194,5 +1253,53 @@ footer {
 
 a:visited {
   color: #1d1b1b;
+}
+
+.perrito {
+  width: 1000px;
+  height: 270px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 70px auto 70px auto;
+}
+
+.perrito:hover {
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.estiloNotFound {
+  font-size: 98px;
+  text-align: center;
+}
+
+.body404 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.notFound {
+  font-size: 35px;
+  margin: 10px 35px 20px 35px;
+  font-family: 'Rubik', sans-serif;
+  text-align: center;
+}
+
+.linkHome {
+  font-size: 15px;
+  font-family: 'Rubik', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 /*# sourceMappingURL=style.css.map */
