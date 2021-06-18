@@ -78,7 +78,7 @@ i{
 
 .parrafoPocasPulgas {
     @include parrafo;
-    line-height: 0,7px;  
+    line-height: 0,7px;
 }
 
 
@@ -98,13 +98,7 @@ i{
 
 }
 
-.imgDonaciones{
-    width: 400px;
-    height: 200px;
-    display: inline-block;
-    margin: 10px;
-    transition: height 2s;
-}
+
 
 
 
@@ -112,46 +106,20 @@ i{
 
 aside ul li {
     display: flex;
-    justify-content: space-between;
-    flex-direction: column;   
+     
 }
 
 
 
-.barraLateral { 
-    margin:0px;
-    width: 300px;
-    height: 250px;
-    float: left;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    justify-content: center;
- 
-}
+
 
 /*estilos para botones*/
 
-.botones{
-    width: 60px;
-    padding: 0%;
-    height: 40px;
-    text-align: center;
-}
+
 
 .botones li{
     display:block;
 }   
-
-/*estilos para logos-iconos de las redes sociales*/
-
-.logosRedesSociales{
-    width: 100%;
-    height: 800px;
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-} 
 
 
 
@@ -208,36 +176,6 @@ ul{
     justify-content: center;
 }
 
-/* MOBILE!!!!!!! */
-
-@media only screen and (max-with: 370px) {
-    /*ordinary css rules*/
-    body{
-        background-size: 10px;
-        background-repeat: no-repeat;
-    }
-}
-
-
- 
-
-/* TABLET !!!!!*/
-@media only screen and (min-width: 375px) and (max-width: 961px) {
-    
-    /* body{
-       
-    } */
-}
-
-/* ESCRITORIO / DESKTOP!!!!! */
-@media only screen and (min-width: 961px){
-    /* body {
-        
-    } */
-
-}
-
-
 /* Transiciones*/
 
 .image:hover {
@@ -280,19 +218,17 @@ ul{
 
 ////*estilos para pagina Nosotros*/////
 
-h2 {
-   @include titulosPrincipales;
-  }
 
 /////*titulo mas grande*/////
 
   h1 {
   @include titulosPrincipales;
-  margin-top: none;
+  margin-left: 50px;
   }
 
   .parrafosNosotros{
-   @include parrafo;
+   
+   margin-left:200px;
  }
 
   .listaDesordenada {
@@ -328,11 +264,6 @@ h2 {
     color: $colorVisited;
 }
 
-.tituloDonaciones{
-    font-family: 'Rubik', sans-serif;
-    display: flex;
-    justify-content: center;
-}
 
 
 
@@ -373,7 +304,10 @@ h2 {
 
 .bodyNosotros{
     background-color: $backgroundLila;
+    
 }
+
+
 
 /*Transiciones*/
 

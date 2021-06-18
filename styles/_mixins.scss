@@ -1,13 +1,11 @@
 @mixin parrafo{
     
         font-family: 'Caveat', cursive;
-        font-size: $textoParrafo;
         word-spacing: 5px;
         line-height: 25px;
         color: $colorTexto;
         text-decoration: wavy;
         font-family: 'Caveat', cursive;
-        clear: left;
     
 }
 
@@ -15,6 +13,7 @@
     font-size: $titulosPrincipales;
     color: $colorTitulos;
     font-family: 'Caveat', cursive;
+    margin-left:100px;
 
 }
 

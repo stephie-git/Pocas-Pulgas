@@ -74,14 +74,12 @@ i {
 /*pequeño parrafo de pagina principal*/
 .parrafoPocasPulgas {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
   line-height: 0,7px;
 }
 
@@ -110,73 +108,16 @@ i {
   transition: height 2s;
 }
 
-.imgDonaciones {
-  width: 400px;
-  height: 200px;
-  display: inline-block;
-  margin: 10px;
-  -webkit-transition: height 2s;
-  transition: height 2s;
-}
-
 /*Flex box para la barra lateral (aside)*/
 aside ul li {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-.barraLateral {
-  margin: 0px;
-  width: 300px;
-  height: 250px;
-  float: left;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 /*estilos para botones*/
-.botones {
-  width: 60px;
-  padding: 0%;
-  height: 40px;
-  text-align: center;
-}
-
 .botones li {
   display: block;
-}
-
-/*estilos para logos-iconos de las redes sociales*/
-.logosRedesSociales {
-  width: 100%;
-  height: 800px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  text-align: center;
 }
 
 footer {
@@ -238,29 +179,6 @@ ul {
           justify-content: center;
 }
 
-/* MOBILE!!!!!!! */
-@media only screen and (max-with: 370px) {
-  /*ordinary css rules*/
-  body {
-    background-size: 10px;
-    background-repeat: no-repeat;
-  }
-}
-
-/* TABLET !!!!!*/
-@media only screen and (min-width: 375px) and (max-width: 961px) {
-  /* body{
-       
-    } */
-}
-
-/* ESCRITORIO / DESKTOP!!!!! */
-@media only screen and (min-width: 961px) {
-  /* body {
-        
-    } */
-}
-
 /* Transiciones*/
 .image:hover {
   -webkit-transition: all 0,2s ease;
@@ -303,29 +221,16 @@ ul {
           transform: translateX(70px);
 }
 
-h2 {
-  font-size: 30px;
-  color: #a728a7;
-  font-family: 'Caveat', cursive;
-}
-
 h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
-  margin-top: none;
+  margin-left: 100px;
+  margin-left: 50px;
 }
 
 .parrafosNosotros {
-  font-family: 'Caveat', cursive;
-  font-size: 25px;
-  word-spacing: 5px;
-  line-height: 25px;
-  color: #2c2727;
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
-  font-family: 'Caveat', cursive;
-  clear: left;
+  margin-left: 200px;
 }
 
 .listaDesordenada {
@@ -347,14 +252,12 @@ h1 {
 
 .itemParrafo {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
 }
 
 .transitosPocasPulgas {
@@ -366,16 +269,6 @@ h1 {
   font-family: 'Rubik', sans-serif;
   font-size: 25px;
   color: #1d1b1b;
-}
-
-.tituloDonaciones {
-  font-family: 'Rubik', sans-serif;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
 }
 
 /*Boostrap*/
@@ -447,6 +340,7 @@ h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
+  margin-left: 100px;
   color: #a728a7;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -477,6 +371,7 @@ h2 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
+  margin-left: 100px;
 }
 
 /*titulo mas grande*/
@@ -484,44 +379,39 @@ h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
+  margin-left: 100px;
   margin-top: 90px;
 }
 
 /*parrafo informativo*/
 .primerParrafo {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
 }
 
 .segundoParrafo {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
 }
 
 .tercerParrafo {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
 }
 
 /*imagen*/
@@ -603,14 +493,12 @@ a:visited {
 
 .parrafoDonaciones {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
 }
 
 .seccionParrafo {
@@ -743,16 +631,14 @@ a:visited {
 }
 
 /*Estilos para el pequeño parrafo de presentacion*/
-p {
+.parrafoGato {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
 }
 
 /*titulo*/
@@ -760,6 +646,7 @@ h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
+  margin-left: 100px;
 }
 
 /*Fotos de gatos en adopcion aplicadas con Grid*/
@@ -943,20 +830,19 @@ footer {
 
 p {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
 }
 
 h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
+  margin-left: 100px;
 }
 
 footer {
@@ -1174,16 +1060,14 @@ ul {
   display: block;
 }
 
-p {
+.parrafoAdopcionesNuestras {
   font-family: 'Caveat', cursive;
-  font-size: 25px;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
-  clear: left;
   font-family: Helvetica;
 }
 
@@ -1191,6 +1075,7 @@ h2 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
+  margin-left: 100px;
   margin-top: 80px;
 }
 
@@ -1301,5 +1186,171 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+}
+
+/* MOBILE!!!!!!! */
+@media only screen and (max-width: 370px) {
+  /*ordinary css rules*/
+  body {
+    background-color: red;
+  }
+  body .image {
+    max-width: 100%;
+  }
+  body .imgDonaciones {
+    max-width: 100%;
+  }
+  .cabecera {
+    width: 100%;
+  }
+  .cabecera .enlaces {
+    width: 10%;
+  }
+  .cabecera .barraLateral {
+    display: inline;
+    width: 100px;
+    height: 89px;
+  }
+  .cabecera .primerTituloImagenes {
+    color: #a728a7;
+    max-width: 5px;
+    margin: 0 20px 0 20px;
+  }
+  .cabecera .parrafoPocasPulgas {
+    line-height: 0,7px;
+    font-size: 1,5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px 30px 5px 30px;
+  }
+  .cabecera .tituloDonaciones {
+    font-family: 'Rubik', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 3px;
+  }
+  .cabecera .imgDonaciones {
+    max-width: 260px;
+  }
+  aside .barraLateral {
+    max-width: 150px;
+    margin-left: 150px;
+    font-size: 10px;
+  }
+  aside .botones {
+    max-width: 80px;
+    margin-top: 20px;
+    margin-left: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside .logosRedesSociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    text-align: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: inline-block;
+    margin-left: 90px;
+    margin-bottom: 40px;
+  }
+}
+
+/* TABLET !!!!!*/
+@media only screen and (min-width: 371px) and (max-width: 961px) {
+  body {
+    background-color: blue;
+  }
+}
+
+/* ESCRITORIO / DESKTOP!!!!! */
+@media only screen and (min-width: 962px) {
+  body {
+    background-color: green;
+  }
+  body .barraLateral {
+    float: left;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .tituloDonaciones {
+    font-family: 'Rubik', sans-serif;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .imgDonaciones {
+    width: 400px;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    -webkit-transition: height 2s;
+    transition: height 2s;
+  }
+  aside .barraLateral {
+    width: 300px;
+    height: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  aside .logosRedesSociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    height: 800px;
+  }
+  aside .botones {
+    padding: 0%;
+    height: 40px;
+    text-align: center;
+  }
 }
 /*# sourceMappingURL=style.css.map */
