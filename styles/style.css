@@ -1,21 +1,5 @@
 @charset "UTF-8";
 /*barra desplegable*/
-.cabecera {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -ms-flex-wrap: nowrap;
-      flex-wrap: nowrap;
-  width: 100%;
-  background-image: url(../Imagenes/Mascotas.jpg);
-  background-size: cover;
-  padding-bottom: 20px;
-}
-
 .enlaces {
   /*para que se ponga en linea*/
   display: inline;
@@ -225,7 +209,6 @@ h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
-  margin-left: 100px;
   margin-left: 50px;
 }
 
@@ -336,20 +319,6 @@ h1 {
           transform: rotate(360deg);
 }
 
-.primerTituloImagenes {
-  font-size: 30px;
-  color: #a728a7;
-  font-family: 'Caveat', cursive;
-  margin-left: 100px;
-  color: #a728a7;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -371,7 +340,6 @@ h2 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
-  margin-left: 100px;
 }
 
 /*titulo mas grande*/
@@ -379,7 +347,6 @@ h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
-  margin-left: 100px;
   margin-top: 90px;
 }
 
@@ -646,7 +613,6 @@ h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
-  margin-left: 100px;
 }
 
 /*Fotos de gatos en adopcion aplicadas con Grid*/
@@ -842,7 +808,6 @@ h1 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
-  margin-left: 100px;
 }
 
 footer {
@@ -1075,8 +1040,6 @@ h2 {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
-  margin-left: 100px;
-  margin-top: 80px;
 }
 
 h3 {
@@ -1274,13 +1237,58 @@ a:visited {
 @media only screen and (min-width: 371px) and (max-width: 961px) {
   body {
     background-color: blue;
+    /*logo pocas pulgas*/
+  }
+  body .cabecera {
+    background-image: url(../Imagenes/Mascotas.jpg);
+    background-size: 115%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    background-repeat: no-repeat;
+  }
+  body .logo {
+    width: 120px;
+    height: 90px;
+  }
+  body .image {
+    width: 270px;
+    height: 250px;
+    margin: 10px;
+  }
+  body .primerTituloImagenes {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    color: #a728a7;
+    font: size 20px;
+    margin-left: 50px;
+  }
+  body .logosRedesSociales {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    display: inline-block;
+  }
+  body .imgDonaciones {
+    max-width: 200%;
+    max-height: 180%;
   }
 }
 
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px) {
   body {
-    background-color: green;
+    background-color: #758375;
   }
   body .barraLateral {
     float: left;
@@ -1298,6 +1306,21 @@ a:visited {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  body .cabecera {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    background-image: url(../Imagenes/Mascotas.jpg);
+    background-size: cover;
+    padding-bottom: 20px;
+  }
   body .tituloDonaciones {
     font-family: 'Rubik', sans-serif;
     display: -webkit-box;
@@ -1314,6 +1337,19 @@ a:visited {
     margin: 10px;
     -webkit-transition: height 2s;
     transition: height 2s;
+  }
+  body .primerTituloImagenes {
+    font-size: 30px;
+    color: #a728a7;
+    font-family: 'Caveat', cursive;
+    color: #a728a7;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-family: 'Caveat', cursive;
   }
   aside .barraLateral {
     width: 300px;

@@ -94,13 +94,58 @@
 @media only screen and (min-width: 371px) and (max-width: 961px) {
     body{
         background-color:blue;
+
+        .cabecera{
+            background-image: url(../Imagenes/Mascotas.jpg);
+            background-size: 115%;
+            display: flex;
+            flex-direction:column;
+            flex-wrap: nowrap;
+            background-repeat: no-repeat;
+            
+        }
+
+        /*logo pocas pulgas*/
+
+        .logo{
+            width: 120px;
+            height: 90px;
+        }
+
+        .image{
+            width: 270px;
+            height: 250px;
+            margin: 10px ;
+        }
+
+        .primerTituloImagenes{
+            display: flex;
+            justify-content: center;
+            color: $colorTitulos;
+            font: size 20px;
+            margin-left: 50px;
+        }
+
+
+        .logosRedesSociales{
+            justify-content: space-between;
+            display: inline-block;
+           
+        } 
+
+        .imgDonaciones{
+           max-width: 200%;
+           max-height: 180%;
+
+        }
+
     }
 }
 
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px){
     body{
-        background-color:green;
+        background-color:rgb(117, 131, 117);
         .barraLateral{
             float: left;
             display: flex;
@@ -108,6 +153,17 @@
             justify-content: space-between;
             justify-content: center;
         }
+
+            .cabecera{
+                display:flex;
+                flex-direction:column;
+                flex-wrap:nowrap;
+                width:100%;
+                background-image: url(../Imagenes/Mascotas.jpg);
+                background-size: cover;
+                padding-bottom:20px;
+            }
+        
 
         .tituloDonaciones{
             font-family: 'Rubik', sans-serif;
@@ -121,6 +177,15 @@
             display: inline-block;
             margin: 10px;
             transition: height 2s;
+        }
+
+        .primerTituloImagenes{
+            @include titulosPrincipales;
+            color: $colorTitulos;
+            display: flex;
+            justify-content: center;
+            font-family: 'Caveat', cursive;
+           
         }
         
     }

@@ -1,16 +1,9 @@
 
 
+
+
  /*barra desplegable*/
 
-    .cabecera{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:nowrap;
-        width:100%;
-        background-image: url(../Imagenes/Mascotas.jpg);
-        background-size: cover;
-        padding-bottom:20px;
-    }
     .enlaces {
       /*para que se ponga en linea*/
       display:inline;
@@ -317,11 +310,5 @@ ul{
     transform: rotate(360deg);
 }
 
-.primerTituloImagenes{
-    @include titulosPrincipales;
-    color: $colorTitulos;
-    display: flex;
-    justify-content: center;
-   
-}
+
 
