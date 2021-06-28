@@ -23,10 +23,30 @@ h1 {
     @include titulosPrincipales;
 }
 
-//////*pie de pagina*//////
-
+/////*Estilo Footer*/////
 footer {
-    @include footer;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'izquierda centro derecha';
+    font-family: 'Rubik', sans-serif;
+    h4{
+        grid-area:centro;
+        margin: auto;
+        font-size: 20px;
+    }
+   .logosRedesSociales{
+    grid-area:derecha;
+    width:180px;
+    display: flex;
+    flex-direction: row;
+    margin-left:40%;
+    justify-content: space-between;
+    i{
+        font-size: 35px;
+    }
+}
+
 }
 
 /////*barra desplegable*/////
@@ -156,8 +176,3 @@ ul{
     filter:saturate(180%);
 }
 
-.footerPerros{
-    @include footer;
-    margin: 50px;
-
-}

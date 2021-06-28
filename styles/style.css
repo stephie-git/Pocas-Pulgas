@@ -56,20 +56,15 @@ body {
 
 /*estilos para icono*/
 i {
-  font-size: 35px;
+  font-size: 30px;
   color: indigo;
 }
 
 /*pequeño parrafo de pagina principal*/
 .parrafoPocasPulgas {
-  font-family: 'Caveat', cursive;
-  word-spacing: 5px;
-  line-height: 25px;
-  color: #2c2727;
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
-  font-family: 'Caveat', cursive;
-  line-height: 0,7px;
+  color: #a728a7;
+  font-size: 32px;
+  line-height: 1.5;
 }
 
 /*estilos para mi parrafo*/
@@ -85,11 +80,12 @@ i {
       -ms-flex-pack: right;
           justify-content: right;
   height: 250px;
+  margin: 20px 30px 20px 30px;
 }
 
 .donacionesPocasPulgas {
-  width: 100%;
-  margin: 40px auto 40px auto;
+  width: 90%;
+  margin: auto;
   border: 5px double #292626;
   -o-object-fit: cover;
      object-fit: cover;
@@ -97,26 +93,50 @@ i {
   transition: height 2s;
 }
 
-/*Flex box para la barra lateral (aside)*/
-aside ul li {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-/*estilos para botones*/
-.botones li {
-  display: block;
+.donacionesPocasPulgas .imgDonaciones {
+  margin: 30px 20px 30px 40px;
 }
 
 footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda centro derecha';
+  font-family: 'Rubik', sans-serif;
+  margin: 40px 0 40px 0;
+}
+
+footer h4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: centro;
+  margin-top: auto;
+  font-size: 20px;
+}
+
+footer .logosRedesSociales {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: derecha;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  font-family: 'Rubik', sans-serif;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logosRedesSociales i {
+  font-size: 35px;
 }
 
 /*Barra desplegable de perros y gatos*/
@@ -160,12 +180,29 @@ ul {
 
 /*mapa de llegada al refugio]*/
 .mapaDeLlegada {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda  derecha';
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+
+.mapaDeLlegada .mapa {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: izquierda;
+  margin: auto;
+}
+
+.mapaDeLlegada .videoExplicativo {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: derecha;
+  margin: auto;
 }
 
 /* Transiciones*/
@@ -302,15 +339,6 @@ h1 {
   max-height: 50%;
 }
 
-.footerNosotros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
 .bodyNosotros {
   background-color: #b695c0;
 }
@@ -364,6 +392,7 @@ h1 {
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
+  font-size: 25px;
 }
 
 .segundoParrafo {
@@ -374,6 +403,7 @@ h1 {
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
+  font-size: 25px;
 }
 
 .tercerParrafo {
@@ -384,6 +414,7 @@ h1 {
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
+  font-size: 25px;
 }
 
 /*imagen*/
@@ -396,14 +427,49 @@ h1 {
           justify-content: center;
 }
 
-/*pie de pagina*/
+.perrito .fotoPerrito {
+  width: 450px;
+}
+
 footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda centro derecha';
+  font-family: 'Rubik', sans-serif;
+}
+
+footer h4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: centro;
+  margin: auto;
+  font-size: 20px;
+}
+
+footer .logosRedesSociales {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: derecha;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logosRedesSociales i {
+  font-size: 35px;
 }
 
 /*Barra desplegable de perros y gatos*/
@@ -440,7 +506,6 @@ ul {
 
 /*barra desplegable*/
 .enlaces {
-  /*para que se ponga en linea*/
   display: inline;
   color: #160532;
   font-size: 15px;
@@ -476,23 +541,34 @@ a:visited {
 .seccionParrafo {
   margin: 70px 10px 30px 10px;
   line-height: 0,7px;
-}
-
-.itemsDonaciones .metodosDePago .liBody {
-  list-style: circle;
-  color: #a728a7;
   font-size: 25px;
-  font-family: 'Rubik', sans-serif;
-  text-transform: uppercase;
-  margin: 50px auto 50px auto;
-  width: 400px;
-  text-align: justify;
-  cursor: pointer;
-  line-height: 0,7px;
 }
 
-.liBody {
-  margin: 10px;
+.itemsDonaciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda derecha';
+  margin-top: 50px;
+  margin-bottom: 50px;
+  font-family: 'Rubik', sans-serif;
+}
+
+.itemsDonaciones .metodosDePago {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: izquierda;
+  margin: auto;
+  font-size: 20px;
+}
+
+.itemsDonaciones .mercadoPago {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: derecha;
 }
 
 .logo {
@@ -506,13 +582,7 @@ a:visited {
 }
 
 .footerDonaciones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 60px auto 40px auto;
+  margin: 60px 40px 60px 40px;
 }
 
 #barraDesplegable li > a {
@@ -577,7 +647,7 @@ a:visited {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 30px 5px 30px 5px;
+  margin: 40px 5px 40px 5px;
 }
 
 .cardsContainer div img {
@@ -774,14 +844,45 @@ ul {
           filter: saturate(180%);
 }
 
-/*pie de pagina*/
 footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda centro derecha';
+  font-family: 'Rubik', sans-serif;
+}
+
+footer h4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: centro;
+  margin: auto;
+  font-size: 20px;
+}
+
+footer .logosRedesSociales {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: derecha;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logosRedesSociales i {
+  font-size: 35px;
 }
 
 body {
@@ -820,12 +921,44 @@ h1 {
 }
 
 footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda centro derecha';
+  font-family: 'Rubik', sans-serif;
+}
+
+footer h4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: centro;
+  margin: auto;
+  font-size: 20px;
+}
+
+footer .logosRedesSociales {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: derecha;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logosRedesSociales i {
+  font-size: 35px;
 }
 
 .enlaces {
@@ -983,16 +1116,6 @@ ul {
           filter: saturate(180%);
 }
 
-.footerPerros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 50px;
-}
-
 .logo {
   width: 200px;
   height: 160px;
@@ -1081,12 +1204,44 @@ h3 {
 }
 
 footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda centro derecha';
+  font-family: 'Rubik', sans-serif;
+}
+
+footer h4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: centro;
+  margin: auto;
+  font-size: 20px;
+}
+
+footer .logosRedesSociales {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: derecha;
+  width: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-left: 40%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+footer .logosRedesSociales i {
+  font-size: 35px;
 }
 
 .listaDentroRecuadro {
@@ -1202,7 +1357,7 @@ a:visited {
   }
   .cabecera .parrafoPocasPulgas {
     line-height: 0,7px;
-    font-size: 1,5px;
+    font-size: 0,5px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1224,33 +1379,14 @@ a:visited {
   .cabecera .imgDonaciones {
     max-width: 260px;
   }
-  aside .barraLateral {
-    max-width: 150px;
-    margin-left: 150px;
-    font-size: 10px;
-  }
-  aside .botones {
-    max-width: 80px;
-    margin-top: 20px;
-    margin-left: 80px;
+  .logosRedesSociales {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  aside .logosRedesSociales {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    text-align: center;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    display: inline-block;
-    margin-left: 90px;
-    margin-bottom: 40px;
+    margin-left: 80px;
   }
 }
 
@@ -1294,12 +1430,6 @@ a:visited {
     font: size 15px;
     margin-left: 50px;
   }
-  body .logosRedesSociales {
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    display: inline-block;
-  }
   body .imgDonaciones {
     max-width: 200%;
     max-height: 180%;
@@ -1326,6 +1456,9 @@ a:visited {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  body .image {
+    margin: 20px 30px 20px 30px;
   }
   body .cabecera {
     display: -webkit-box;
@@ -1371,43 +1504,6 @@ a:visited {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: 'Caveat', cursive;
-  }
-  aside .barraLateral {
-    width: 300px;
-    height: 250px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-  aside .logosRedesSociales {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    text-align: center;
-    width: 100%;
-    height: 800px;
-  }
-  aside .botones {
-    padding: 0%;
-    height: 40px;
-    text-align: center;
   }
 }
 /*# sourceMappingURL=style.css.map */

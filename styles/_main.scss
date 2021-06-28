@@ -2,7 +2,7 @@
 *{
     box-sizing: border-box;
   }
-  
+
  /*barra desplegable*/
 
     .enlaces {
@@ -35,10 +35,8 @@ a:visited{
     width: 430px;
     height: 400px;
     margin:calc(100%-50px);
-    object-fit: cover;
-      
+    object-fit: cover;     
  }
-
 
 
 /*logo pocas pulgas*/
@@ -60,7 +58,7 @@ body {
 /*estilos para icono*/
 
 i{
-    font-size: 35px;
+    font-size: 30px;
     color:indigo;
     
 }
@@ -68,55 +66,59 @@ i{
 /*pequeño parrafo de pagina principal*/
 
 .parrafoPocasPulgas {
-    @include parrafo;
-    line-height: 0,7px;
+     color: #a728a7;
+     font-size: 32px;
+     line-height: 1.5;
 }
 
 
 /*estilos para mi parrafo*/
 .contenedorParrafo {
     @include contenedorParrafo;
+    margin: 20px 30px 20px 30px;
   
 }
 
 
 .donacionesPocasPulgas {
-    width: 100%;
-    margin: 40px auto 40px auto;
+    width: 90%;
+    margin: auto;
     border: 5px double rgb(41, 38, 38);
     object-fit: cover;
     transition: height 2s;
 
+    .imgDonaciones{
+        margin: 30px 20px 30px 40px;
+    }
+
 }
 
 
 
-
-
-/*Flex box para la barra lateral (aside)*/
-
-aside ul li {
-    display: flex;
-     
-}
-
-
-
-
-
-/*estilos para botones*/
-
-
-
-.botones li{
-    display:block;
-}   
-
-
-
+/////*Estilo Footer*/////
 footer {
-   @include footer;
-   font-family: 'Rubik', sans-serif;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'izquierda centro derecha';
+    font-family: 'Rubik', sans-serif;
+    margin: 40px 0 40px 0;
+    h4{
+        grid-area:centro;
+        margin-top: auto;
+        font-size: 20px;
+    }
+   .logosRedesSociales{
+    grid-area:derecha;
+    width:180px;
+    display: flex;
+    flex-direction: row;
+    margin-left:40%;
+    justify-content: space-between;
+    i{
+        font-size: 35px;
+    }
+}
 }
 
 /*Barra desplegable de perros y gatos*/
@@ -163,8 +165,25 @@ ul{
 /*mapa de llegada al refugio]*/
 
 .mapaDeLlegada {
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'izquierda  derecha';
+    margin-top: 40px;
+    margin-bottom: 40px;
+
+    .mapa{
+        grid-area: izquierda;
+        margin: auto;
+    }   
+
+    .videoExplicativo{
+        grid-area: derecha;
+        margin: auto;
+    }
+    
+    
+
 }
 
 /* Transiciones*/
@@ -215,10 +234,12 @@ ul{
   h1 {
   @include titulosPrincipales;
   margin-left: 50px;
+  
   }
 
+ 
+
   .parrafosNosotros{
-   
    margin-left:200px;
  }
 
