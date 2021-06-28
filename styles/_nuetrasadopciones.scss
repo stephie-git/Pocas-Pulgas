@@ -44,13 +44,17 @@ ul{
 /////*parrafo*/////
 .parrafoAdopcionesNuestras {
     @include parrafo;
-    font-family: Helvetica;
+    font-family: 'Caveat', cursive;
+    font-size: 20px;
+    margin: 20px 30px 20px 30px;
     
 }
 
 /////*TITULOS*/////
 .requisitos {
     @include titulosPrincipales;
+    color: $colorTitulos;
+    text-align: center;
    
 }
 
@@ -60,6 +64,19 @@ h3 {
   
 }
 
+.tituloTips{
+    @include titulosPrincipales;
+    font-size: 25px;
+    color: $colorTitulos;
+    text-align: center;
+
+}
+
+.parrafoTips{
+    margin-top: 40px;
+    font-size: 25px;
+}
+
 
 /////*lista dentro de recuadro*/////
 
@@ -67,53 +84,35 @@ h3 {
     border: 5px solid rgb(36, 33, 33) ;
     width: 66%;
     margin: auto;
-    padding: 40px;
     border-radius: 10px;
 }
 
+.tituloList{
+    @include titulosPrincipales;
+    font-size: 25px;
+    color: $colorTitulos;
+
+}
  .itemLista{
     font-family: Arial, Helvetica, sans-serif; 
-    font-size: 15px;   
-    word-spacing: 5px; 
-    line-height: 25px; 
-    color:rgb(34, 32, 32); 
+    font-size: 20px; 
+    line-height: 1,8px; 
+    color: black;
     text-decoration: wavy;
-    font-family: Helvetica;
-
+    font-family: 'Caveat', cursive;
   }
 
 
 /////*Estilo Footer*/////
-footer {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 'izquierda centro derecha';
-    font-family: 'Rubik', sans-serif;
-    h4{
-        grid-area:centro;
-        margin: auto;
-        font-size: 20px;
+    footer{
+        margin: 40px 45px 40px 45px;
     }
-   .logosRedesSociales{
-    grid-area:derecha;
-    width:180px;
-    display: flex;
-    flex-direction: row;
-    margin-left:40%;
-    justify-content: space-between;
-    i{
-        font-size: 35px;
-    }
-}
-
-}
 
 .listaDentroRecuadro {
     border: 5px solid rgb(36, 33, 33) ;
-    width: 66%;
-    margin: auto;
+    margin: 40px 30px 40px;
     border-radius: 10px;
+    text-align: center;
 }
 
 

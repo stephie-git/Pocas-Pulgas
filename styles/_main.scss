@@ -231,39 +231,72 @@ ul{
 
 /////*titulo mas grande*/////
 
-  h1 {
+  .tituloMision{
   @include titulosPrincipales;
-  margin-left: 50px;
-  
+  margin: 30px 40px 10px 40px;
+  text-align: center;
   }
 
- 
-
   .parrafosNosotros{
-   margin-left:200px;
+   font-size: 20px;
+   margin-left: 30px;
+ }
+
+ .tituloObjetivos{
+     color: #a728a7;
  }
 
   .listaDesordenada {
       list-style: circle;
       color: rgb(22, 21, 21);
-    
+      font-size: 20px;
     }
+
 
 
   .item{
     margin: 10px;
     display: block;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Caveat', cursive;
     font-size: 20px;      
 } 
 
 .pequeñosParrafos{
     @include pequeñosParrafos;
+    color: #a728a7;
+    margin: 30px 40px 30px 40px;
+}
+
+.tituloComoTrabajamos{
+    text-align: center;
+    margin-top: 40px;
 }
 
 .itemParrafo{
     @include parrafo;
+    margin: 30px 40px 30px 40px;
+    font-size: 20px;
 }
+
+.tituloNosotros{
+    display: flex;
+    justify-content: center;
+
+}
+
+.tituloObjetivos{
+    text-align: center;
+    margin-top: 45px;
+    margin-bottom: 27px;
+}    
+
+.footerNosotros{
+    display: flex;
+    justify-content: center;
+}
+
+
+/*Estilos para Transitos*/
 
 .transitosPocasPulgas{
     width: 300px;
@@ -310,9 +343,7 @@ ul{
     max-height: 50%;
 }
 
-.footerNosotros{
-    @include footer;
-}
+
 
 .bodyNosotros{
     background-color: $backgroundLila;
