@@ -134,3 +134,29 @@ h3 {
   a:visited{
   color:rgb(29, 27, 27);
   }
+
+
+  .imagenesPerrosAdopciones{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda derecha';
+      margin: 50px 20px 30px 70px;
+        .primerImagenNuestras{
+            grid-area: izquierda;
+            width: 550px;
+            margin:30px 20px 30px 40px;
+        }
+
+        .segundaImagenNuestras{
+            grid-area: derecha;
+            margin: 30px 40px 50px 30px;
+            width: 500px;
+            
+    
+        }
+  }
+
+  .primerImagenNuestras:hover {filter: sepia(60%);}
+  .segundaImagenNuestras:hover {filter: sepia(60%);}
+  

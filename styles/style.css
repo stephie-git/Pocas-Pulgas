@@ -1185,6 +1185,43 @@ a:visited {
   color: #1d1b1b;
 }
 
+.imagenesPerrosAdopciones {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda derecha';
+  margin: 50px 20px 30px 70px;
+}
+
+.imagenesPerrosAdopciones .primerImagenNuestras {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: izquierda;
+  width: 550px;
+  margin: 30px 20px 30px 40px;
+}
+
+.imagenesPerrosAdopciones .segundaImagenNuestras {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: derecha;
+  margin: 30px 40px 50px 30px;
+  width: 500px;
+}
+
+.primerImagenNuestras:hover {
+  -webkit-filter: sepia(60%);
+          filter: sepia(60%);
+}
+
+.segundaImagenNuestras:hover {
+  -webkit-filter: sepia(60%);
+          filter: sepia(60%);
+}
+
 .perrito {
   width: 1000px;
   height: 270px;
