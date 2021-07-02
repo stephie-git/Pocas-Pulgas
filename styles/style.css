@@ -105,7 +105,7 @@ footer {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: 'izquierda centro derecha';
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Caveat', cursive;
   margin: 40px 0 40px 0;
 }
 
@@ -323,6 +323,7 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  font-family: 'Caveat', cursive;
 }
 
 /*Boostrap*/
@@ -595,6 +596,7 @@ ul {
 footer {
   margin: 40px 45px 40px 45px;
   text-align: center;
+  font-family: 'Caveat', cursive;
 }
 
 /*Barra desplegable de perros y gatos*/
@@ -711,6 +713,7 @@ a:visited {
 
 .footerDonaciones {
   margin: 60px 40px 60px 40px;
+  font-family: 'Caveat', cursive;
 }
 
 #barraDesplegable li > a {
@@ -807,21 +810,18 @@ a:visited {
 }
 
 /*Estilos para el pequeño parrafo de presentacion*/
-.parrafoGato {
-  font-family: 'Caveat', cursive;
-  word-spacing: 5px;
-  line-height: 25px;
-  color: #2c2727;
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
+.parrafogato {
+  font-size: 25px;
+  margin: 20px 30px 60px 30px;
   font-family: 'Caveat', cursive;
 }
 
 /*titulo*/
-h1 {
+.mismoTitulo {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
+  margin-left: 40px;
 }
 
 /*Fotos de gatos en adopcion aplicadas con Grid*/
@@ -980,6 +980,7 @@ ul {
 
 footer {
   margin: 40px 45px 40px 45px;
+  font-family: 'Caveat', cursive;
 }
 
 body {
@@ -1001,7 +1002,7 @@ body {
   cursor: pointer;
 }
 
-p {
+.mismoParrafo {
   font-family: 'Caveat', cursive;
   word-spacing: 5px;
   line-height: 25px;
@@ -1009,9 +1010,11 @@ p {
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
+  font-size: 25px;
+  margin: 25px 30px 25px 30px;
 }
 
-h1 {
+.mismoTitulo {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
@@ -1289,6 +1292,7 @@ h3 {
 
 footer {
   margin: 40px 45px 40px 45px;
+  font-family: 'Caveat', cursive;
 }
 
 .listaDentroRecuadro {

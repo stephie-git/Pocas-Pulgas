@@ -9,14 +9,17 @@
 
 /*Estilos para el pequeño parrafo de presentacion*/
 
-.parrafoGato {
-   @include parrafo;
+.parrafogato {
+   font-size: 25px;
+   margin: 20px 30px 60px 30px;
+   font-family: 'Caveat', cursive;
 }
 
 /*titulo*/
 
-h1 {
-    @include titulosPrincipales
+.mismoTitulo {
+    @include titulosPrincipales;
+    margin-left: 40px;
     
 }
 
@@ -146,6 +149,7 @@ ul{
 
 footer{
     margin: 40px 45px 40px 45px;
+    font-family: 'Caveat', cursive;
 }
 
 

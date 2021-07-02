@@ -13,13 +13,15 @@
 
 //////*Estilos para el pequeño parrafo de presentacion*/////
 
-p {
+.mismoParrafo{
   @include parrafo;
+  font-size: 25px;
+  margin: 25px 30px 25px 30px;
 }
 
 //////*titulo*/////
 
-h1 {
+.mismoTitulo{
     @include titulosPrincipales;
 }
 
