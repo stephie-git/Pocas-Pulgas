@@ -11,14 +11,17 @@
 /*Titulo mas pequeño*/
 .tituloCastracion {
     @include titulosPrincipales;
+    margin-top: 90px;
+    text-align: center;
   }
 
 
 /*titulo mas grande*/
 
-  h1 {
+  .importanciaCastraciones{
     @include titulosPrincipales;
     margin-top: 90px;
+    text-align: center;
   }
 
 
@@ -27,16 +30,19 @@
   .primerParrafo{
     @include parrafo;
     font-size: 23px;
+    margin: 20px 30px 20px 30px;
   }
 
   .segundoParrafo{
     @include parrafo;
     font-size: 23px;
+    margin: 20px 30px 20px 30px;
   }
 
   .tercerParrafo{
     @include parrafo;
     font-size: 23px;
+    margin: 20px 30px 20px 30px;
   }
 
 
@@ -47,8 +53,12 @@
     justify-content: center;
 
     .fotoPerrito{
-    width: 450px;
-  }
+      width: 450px;
+    }
+
+    .fotoGatito{
+      width: 490px;
+    }
 }
 
   /////*Estilo Footer*/////

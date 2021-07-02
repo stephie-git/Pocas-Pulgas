@@ -296,21 +296,6 @@ ul{
 }
 
 
-/*Estilos para Transitos*/
-
-.transitosPocasPulgas{
-    width: 300px;
-    height: 350px;
-}
-
-.parrafoTransitos{
-    font-family:'Rubik', sans-serif;
-    font-size: $textoParrafo; 
-    color: $colorVisited;
-}
-
-
-
 
 /////*Nosotros*/////
 
@@ -360,5 +345,90 @@ ul{
     transform: rotate(360deg);
 }
 
+/*Estilos para Transitos*/
+
+.transitosPocasPulgas{
+    width: 75%;
+    height: 75%;
+    object-fit: cover;
+    margin-left: 60px;
+
+}
+
+.parrafoTransitos{
+    font-family:'Rubik', sans-serif;
+    font-size: $textoParrafo; 
+    color: $colorVisited;
+}
 
 
+.primerTituloTransitorio{
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+
+.transitorioTitulo{
+    font-family:'Rubik', sans-serif;
+    color: #a728a7;
+    font-weight: bold;
+    margin-left: 30px;
+    }
+
+.parrafoTransitos{
+    margin: 30px 25px 30px 25px;
+}
+
+.transitosFotos{
+    display: grid;
+    grid-template-columns: repeat(3, 3fr);
+    grid-template-rows: 1fr;
+    grid-template-areas: 'izquierda  derecha';
+  
+}
+
+
+#transito1 {
+    grid-column: 1/2;
+    grid-row: 1/2;
+}
+
+#transito2 {
+    grid-column: 2/3;
+    grid-row: 1/2;
+}   
+
+#transito3 {
+    grid-column: 3/4;
+    grid-row: 1/2;
+}
+
+#transito4{
+    grid-column: 1/2;
+    grid-row: 2/3;
+}
+
+#transito5{
+    grid-column: 2/3;
+    grid-row: 2/3;
+}
+
+#transito6{
+    grid-column: 3/4;
+    grid-row: 2/3;
+}
+
+#transito7 {
+    grid-column: 1/2;
+    grid-row: 3/4;
+}
+
+#transito8 {
+    grid-column: 2/3;
+    grid-row: 3/4;
+}
+
+#transito9 {
+    grid-column: 3/4;
+    grid-row: 3/4;
+}

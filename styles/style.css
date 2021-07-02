@@ -325,18 +325,6 @@ ul {
           justify-content: center;
 }
 
-/*Estilos para Transitos*/
-.transitosPocasPulgas {
-  width: 300px;
-  height: 350px;
-}
-
-.parrafoTransitos {
-  font-family: 'Rubik', sans-serif;
-  font-size: 25px;
-  color: #1d1b1b;
-}
-
 /*Boostrap*/
 #carouselExampleIndicators {
   max-width: 600px;
@@ -393,6 +381,128 @@ ul {
           transform: rotate(360deg);
 }
 
+/*Estilos para Transitos*/
+.transitosPocasPulgas {
+  width: 75%;
+  height: 75%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-left: 60px;
+}
+
+.parrafoTransitos {
+  font-family: 'Rubik', sans-serif;
+  font-size: 25px;
+  color: #1d1b1b;
+}
+
+.primerTituloTransitorio {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.transitorioTitulo {
+  font-family: 'Rubik', sans-serif;
+  color: #a728a7;
+  font-weight: bold;
+  margin-left: 30px;
+}
+
+.parrafoTransitos {
+  margin: 30px 25px 30px 25px;
+}
+
+.transitosFotos {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (3fr)[3];
+      grid-template-columns: repeat(3, 3fr);
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+      grid-template-areas: 'izquierda  derecha';
+}
+
+#transito1 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#transito2 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#transito3 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 1;
+  grid-row: 1/2;
+}
+
+#transito4 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#transito5 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#transito6 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 1;
+  grid-row: 2/3;
+}
+
+#transito7 {
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 1;
+  grid-column: 1/2;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+#transito8 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
+#transito9 {
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+}
+
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -414,14 +524,17 @@ ul {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
+  margin-top: 90px;
+  text-align: center;
 }
 
 /*titulo mas grande*/
-h1 {
+.importanciaCastraciones {
   font-size: 30px;
   color: #a728a7;
   font-family: 'Caveat', cursive;
   margin-top: 90px;
+  text-align: center;
 }
 
 /*parrafo informativo*/
@@ -434,6 +547,7 @@ h1 {
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
   font-size: 23px;
+  margin: 20px 30px 20px 30px;
 }
 
 .segundoParrafo {
@@ -445,6 +559,7 @@ h1 {
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
   font-size: 23px;
+  margin: 20px 30px 20px 30px;
 }
 
 .tercerParrafo {
@@ -456,6 +571,7 @@ h1 {
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
   font-size: 23px;
+  margin: 20px 30px 20px 30px;
 }
 
 /*imagen*/
@@ -470,6 +586,10 @@ h1 {
 
 .perrito .fotoPerrito {
   width: 450px;
+}
+
+.perrito .fotoGatito {
+  width: 490px;
 }
 
 footer {
@@ -541,11 +661,13 @@ a:visited {
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
+  line-height: 1,8px;
+  font-size: 25px;
+  margin: 60px 25px 30px 25px;
 }
 
-.seccionParrafo {
+.parrafoDonaciones .seccionParrafo {
   margin: 70px 10px 30px 10px;
-  line-height: 0,7px;
   font-size: 25px;
 }
 
@@ -557,9 +679,9 @@ a:visited {
   -ms-grid-rows: 1fr;
       grid-template-rows: 1fr;
       grid-template-areas: 'izquierda derecha';
-  margin-top: 50px;
-  margin-bottom: 50px;
-  font-family: 'Rubik', sans-serif;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: 'Caveat', cursive;
 }
 
 .itemsDonaciones .metodosDePago {
@@ -567,7 +689,8 @@ a:visited {
   -ms-grid-column: 1;
   grid-area: izquierda;
   margin: auto;
-  font-size: 20px;
+  font-size: 25px;
+  list-style: inherit;
 }
 
 .itemsDonaciones .mercadoPago {
@@ -625,7 +748,7 @@ a:visited {
   display: inline;
   color: #160532;
   font-size: 15px;
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Caveat', cursive;
   word-spacing: 60px;
   letter-spacing: 5px;
   margin: auto 35px;
@@ -646,19 +769,25 @@ a:visited {
 }
 
 .tituloGracias {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 40px 5px 40px 5px;
+  text-align: center;
+  margin: 70px 5px 40px 5px;
+  font-family: 'Caveat', cursive;
 }
 
 .cardsContainer div img {
-  min-height: 300px;
+  min-height: 200px;
   -o-object-fit: cover;
      object-fit: cover;
+}
+
+.card-title {
+  width: 300px;
+  height: 5px;
+}
+
+.card-img-top {
+  height: 300px;
+  width: 400px;
 }
 
 * {
