@@ -81,10 +81,10 @@ h3 {
 /////*lista dentro de recuadro*/////
 
 .nuestrasAdopcionesLista{
-    border: 5px solid rgb(36, 33, 33) ;
-    width: 66%;
-    margin: auto;
-    border-radius: 10px;
+    list-style:circle; 
+    margin: 20px 15px 20px 25px;
+    border-radius: 20px;
+    
 }
 
 .tituloList{
@@ -94,12 +94,11 @@ h3 {
 
 }
  .itemLista{
-    font-family: Arial, Helvetica, sans-serif; 
     font-size: 20px; 
     line-height: 1,8px; 
     color: black;
-    text-decoration: wavy;
     font-family: 'Caveat', cursive;
+    list-style: inherit;
   }
 
 
@@ -113,7 +112,7 @@ h3 {
     border: 5px solid rgb(36, 33, 33) ;
     margin: 40px 30px 40px;
     border-radius: 10px;
-    text-align: center;
+    list-style: inherit;
 }
 
 

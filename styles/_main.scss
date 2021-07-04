@@ -1,7 +1,7 @@
 
 *{
     box-sizing: border-box;
-  }
+}
 
  /*barra desplegable*/
 
@@ -60,39 +60,7 @@ body {
 i{
     font-size: 30px;
     color:indigo;
-    
 }
-
-/*pequeño parrafo de pagina principal*/
-
-.parrafoPocasPulgas {
-     color: rgb(36, 34, 34);
-     font-size: 32px;
-     line-height: 1.5;
-}
-
-
-/*estilos para mi parrafo*/
-.contenedorParrafo {
-    @include contenedorParrafo;
-    margin: 20px 30px 20px 30px;
-  
-}
-
-
-.donacionesPocasPulgas {
-    width: 90%;
-    margin: auto;
-    border: 5px double rgb(41, 38, 38);
-    object-fit: cover;
-    transition: height 2s;
-
-    .imgDonaciones{
-        margin: 30px 20px 30px 40px;
-    }
-
-}
-
 
 
 /////*Estilo Footer*/////
@@ -108,18 +76,9 @@ footer {
         margin-top: auto;
         font-size: 20px;
     }
-   .logosRedesSociales{
-    grid-area:derecha;
-    width:180px;
-    display: flex;
-    flex-direction: row;
-    margin-left:40%;
-    justify-content: space-between;
-    i{
-        font-size: 35px;
-    }
+   
 }
-}
+
 
 /*Barra desplegable de perros y gatos*/
 
@@ -162,29 +121,6 @@ ul{
 }
 
 
-/*mapa de llegada al refugio]*/
-
-.mapaDeLlegada {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: 1fr;
-    grid-template-areas: 'izquierda  derecha';
-    margin-top: 40px;
-    margin-bottom: 40px;
-
-    .mapa{
-        grid-area: izquierda;
-        margin: auto;
-    }   
-
-    .videoExplicativo{
-        grid-area: derecha;
-        margin: auto;
-    }
-    
-    
-
-}
 
 /* Transiciones*/
 
@@ -237,19 +173,20 @@ ul{
   text-align: center;
   }
 
-  .parrafosNosotros{
-   font-size: 20px;
-   margin-left: 30px;
- }
+    .parrafosNosotros{
+        font-family: 'Caveat', cursive; 
+        font-size: 25px;
+        margin: 20px 25px 20px 25px;
+    }
 
  .tituloObjetivos{
-     color: #a728a7;
+    color:indigo;
+     font-family: 'Caveat', cursive; 
  }
 
   .listaDesordenada {
-      list-style: circle;
       color: rgb(22, 21, 21);
-      font-size: 20px;
+      font-size: 25px;
     }
 
 
@@ -258,7 +195,7 @@ ul{
     margin: 10px;
     display: block;
     font-family: 'Caveat', cursive;
-    font-size: 20px;      
+    font-size: 23px;      
 } 
 
 .pequeñosParrafos{
@@ -269,14 +206,26 @@ ul{
 
 .tituloComoTrabajamos{
     text-align: center;
-    margin-top: 40px;
+    
 }
 
 .itemParrafo{
     @include parrafo;
     margin: 30px 40px 30px 40px;
-    font-size: 20px;
+    font-size: 25px;
 }
+
+/////*Nosotros*/////
+
+.sectionNosotros{
+    margin: 30px 15px 80px 15px;
+    div{
+        margin:50px auto;
+        width:100%;
+        text-align:center;
+    }
+}
+
 
 .tituloNosotros{
     display: flex;
@@ -291,60 +240,36 @@ ul{
 }    
 
 .footerNosotros{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     font-family: 'Caveat', cursive;
 }
 
-
-
-/////*Nosotros*/////
-
-/*Boostrap*/
-
-#carouselExampleIndicators {
-    max-width: 600px;
-    display: flex;
-    justify-content: center;
-    max-height: 50%;
-    align-items: center;
-   
-    &.carousel{
-        @include carousel;
-    }
-
-    & .carouselBoot {
-        @include carousel;
-    }
-}
-
-.carouselBoot{
-    width: 50%;
-    margin: auto;
-    max-height: 50%;
+.imagenNosotros{
+  margin: auto;
+  width: 800px;
 
 }
-
-.carousel-inner{
-    max-height: 50%;
-}
-
 
 
 .bodyNosotros{
     background-color: $backgroundLila;
-    
 }
 
-
-
-/*Transiciones*/
-
-.donacionesPocasPulgas .imgDonaciones:hover{
-    border-radius:50%;
-    box-shadow: 0px 0px 15px 15px rgb(99, 16, 99);
-    transform: rotate(360deg);
+.mismoTitulo{
+    text-align: center;
 }
+
+.sectionForm{
+    display: flex;
+    justify-content: center;
+
+}
+.form{
+    display:flex;
+    flex-direction:column;
+    width:350px;
+}
+
 
 /*Estilos para Transitos*/
 
@@ -357,7 +282,7 @@ ul{
 }
 
 .parrafoTransitos{
-    font-family:'Rubik', sans-serif;
+    font-family: 'Caveat', cursive;
     font-size: $textoParrafo; 
     color: $colorVisited;
 }
@@ -366,11 +291,13 @@ ul{
 .primerTituloTransitorio{
     text-align: center;
     margin-bottom: 50px;
+    font-family: 'Caveat', cursive;
+    color: #a728a7;
 }
 
 
 .transitorioTitulo{
-    font-family:'Rubik', sans-serif;
+    font-family: 'Caveat', cursive;
     color: #a728a7;
     font-weight: bold;
     margin-left: 30px;

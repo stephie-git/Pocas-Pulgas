@@ -60,43 +60,6 @@ i {
   color: indigo;
 }
 
-/*pequeño parrafo de pagina principal*/
-.parrafoPocasPulgas {
-  color: #242222;
-  font-size: 32px;
-  line-height: 1.5;
-}
-
-/*estilos para mi parrafo*/
-.contenedorParrafo {
-  border-top: 3px dashed #242121;
-  border-bottom: 3px dashed #242121;
-  -o-object-fit: cover;
-     object-fit: cover;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: right;
-      -ms-flex-pack: right;
-          justify-content: right;
-  height: 250px;
-  margin: 20px 30px 20px 30px;
-}
-
-.donacionesPocasPulgas {
-  width: 90%;
-  margin: auto;
-  border: 5px double #292626;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -webkit-transition: height 2s;
-  transition: height 2s;
-}
-
-.donacionesPocasPulgas .imgDonaciones {
-  margin: 30px 20px 30px 40px;
-}
-
 footer {
   display: -ms-grid;
   display: grid;
@@ -115,28 +78,6 @@ footer h4 {
   grid-area: centro;
   margin-top: auto;
   font-size: 20px;
-}
-
-footer .logosRedesSociales {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: derecha;
-  width: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  margin-left: 40%;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-}
-
-footer .logosRedesSociales i {
-  font-size: 35px;
 }
 
 /*Barra desplegable de perros y gatos*/
@@ -176,33 +117,6 @@ ul {
 
 #barraDesplegable > li:hover > ul {
   display: block;
-}
-
-/*mapa de llegada al refugio]*/
-.mapaDeLlegada {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: 'izquierda  derecha';
-  margin-top: 40px;
-  margin-bottom: 40px;
-}
-
-.mapaDeLlegada .mapa {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: izquierda;
-  margin: auto;
-}
-
-.mapaDeLlegada .videoExplicativo {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: derecha;
-  margin: auto;
 }
 
 /* Transiciones*/
@@ -256,25 +170,26 @@ ul {
 }
 
 .parrafosNosotros {
-  font-size: 20px;
-  margin-left: 30px;
+  font-family: 'Caveat', cursive;
+  font-size: 25px;
+  margin: 20px 25px 20px 25px;
 }
 
 .tituloObjetivos {
-  color: #a728a7;
+  color: indigo;
+  font-family: 'Caveat', cursive;
 }
 
 .listaDesordenada {
-  list-style: circle;
   color: #161515;
-  font-size: 20px;
+  font-size: 25px;
 }
 
 .item {
   margin: 10px;
   display: block;
   font-family: 'Caveat', cursive;
-  font-size: 20px;
+  font-size: 23px;
 }
 
 .pequeñosParrafos {
@@ -286,7 +201,6 @@ ul {
 
 .tituloComoTrabajamos {
   text-align: center;
-  margin-top: 40px;
 }
 
 .itemParrafo {
@@ -298,7 +212,17 @@ ul {
           text-decoration: wavy;
   font-family: 'Caveat', cursive;
   margin: 30px 40px 30px 40px;
-  font-size: 20px;
+  font-size: 25px;
+}
+
+.sectionNosotros {
+  margin: 30px 15px 80px 15px;
+}
+
+.sectionNosotros div {
+  margin: 50px auto;
+  width: 100%;
+  text-align: center;
 }
 
 .tituloNosotros {
@@ -317,69 +241,41 @@ ul {
 }
 
 .footerNosotros {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  text-align: center;
   font-family: 'Caveat', cursive;
 }
 
-/*Boostrap*/
-#carouselExampleIndicators {
-  max-width: 600px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  max-height: 50%;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-#carouselExampleIndicators.carousel {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-#carouselExampleIndicators .carouselBoot {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.carouselBoot {
-  width: 50%;
+.imagenNosotros {
   margin: auto;
-  max-height: 50%;
-}
-
-.carousel-inner {
-  max-height: 50%;
+  width: 800px;
 }
 
 .bodyNosotros {
   background-color: #b695c0;
 }
 
-/*Transiciones*/
-.donacionesPocasPulgas .imgDonaciones:hover {
-  border-radius: 50%;
-  -webkit-box-shadow: 0px 0px 15px 15px #631063;
-          box-shadow: 0px 0px 15px 15px #631063;
-  -webkit-transform: rotate(360deg);
-          transform: rotate(360deg);
+.mismoTitulo {
+  text-align: center;
+}
+
+.sectionForm {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 350px;
 }
 
 /*Estilos para Transitos*/
@@ -392,7 +288,7 @@ ul {
 }
 
 .parrafoTransitos {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Caveat', cursive;
   font-size: 25px;
   color: #1d1b1b;
 }
@@ -400,10 +296,12 @@ ul {
 .primerTituloTransitorio {
   text-align: center;
   margin-bottom: 50px;
+  font-family: 'Caveat', cursive;
+  color: #a728a7;
 }
 
 .transitorioTitulo {
-  font-family: 'Rubik', sans-serif;
+  font-family: 'Caveat', cursive;
   color: #a728a7;
   font-weight: bold;
   margin-left: 30px;
@@ -1266,10 +1164,9 @@ h3 {
 }
 
 .nuestrasAdopcionesLista {
-  border: 5px solid #242121;
-  width: 66%;
-  margin: auto;
-  border-radius: 10px;
+  list-style: circle;
+  margin: 20px 15px 20px 25px;
+  border-radius: 20px;
 }
 
 .tituloList {
@@ -1281,13 +1178,11 @@ h3 {
 }
 
 .itemLista {
-  font-family: Arial, Helvetica, sans-serif;
   font-size: 20px;
   line-height: 1,8px;
   color: black;
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
   font-family: 'Caveat', cursive;
+  list-style: inherit;
 }
 
 footer {
@@ -1299,7 +1194,7 @@ footer {
   border: 5px solid #242121;
   margin: 40px 30px 40px;
   border-radius: 10px;
-  text-align: center;
+  list-style: inherit;
 }
 
 .enlaces {
@@ -1406,80 +1301,115 @@ a:visited {
 /* MOBILE!!!!!!! */
 @media only screen and (max-width: 370px) {
   /*ordinary css rules*/
+  .cabecera {
+    background-image: url(../Imagenes/Mascotas.jpg);
+    background-size: 98%;
+    background-repeat: no-repeat;
+  }
+  .cabecera .logo {
+    width: 70px;
+    height: 65px;
+    margin: 2px 70px 5px 2px;
+  }
   body {
     background-color: red;
-    /*logo pocas pulgas*/
+    /*Transiciones*/
   }
   body .image {
     max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .primerTituloImagenes {
+    font-size: 25px;
+    margin: 10px 45px 30px 45px;
+    text-align: center;
+    font-family: 'Caveat', cursive;
+  }
+  body .contenedorParrafo {
+    margin: 20px 30px 20px 30px;
+  }
+  body .parrafoPocasPulgas {
+    line-height: 0,7px;
+    font-size: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 5px 10px 5px 10px;
+    font-family: 'Caveat', cursive;
+  }
+  body .tituloDonaciones {
+    font-family: 'Caveat', cursive;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 0,5px;
   }
   body .imgDonaciones {
-    max-width: 100%;
+    max-width: 250px;
+    margin: 15px 10px 15px 35px;
   }
-  body .logo {
-    width: 120px;
-    height: 90px;
+  body .donacionesPocasPulgas .imgDonaciones:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 15px #631063;
+            box-shadow: 0px 0px 15px 15px #631063;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
-  .cabecera {
-    width: 100%;
-  }
-  .cabecera .enlaces {
-    width: 10%;
-  }
-  .cabecera .barraLateral {
+  body .donacionesPocasPulgas {
+    margin: 30px 20px 30px 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
     display: inline;
-    width: 100px;
-    height: 89px;
   }
-  .cabecera .primerTituloImagenes {
-    color: #a728a7;
-    max-width: 1,5px;
-    margin: 0 20px 0 20px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-family: 'Rubik', sans-serif;
-  }
-  .cabecera .parrafoPocasPulgas {
-    line-height: 0,7px;
-    font-size: 0,5px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    margin: 5px 30px 5px 30px;
-  }
-  .cabecera .tituloDonaciones {
-    font-family: 'Rubik', sans-serif;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 3px;
-  }
-  .cabecera .imgDonaciones {
-    max-width: 260px;
-  }
-  .logosRedesSociales {
+  body .logosRedesSociales {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    margin-left: 80px;
+    margin: 20px 30px 20px 20px;
   }
+  body .mapaDeLlegada {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 25px 5px 10px 25px;
+  }
+  footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+    font-family: 'Caveat', cursive;
+  }
+  footer h4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: centro;
+    margin-top: auto;
+    font-size: 20px;
+  }
+  /* TABLET !!!!!*/
 }
 
-/* TABLET !!!!!*/
-@media only screen and (min-width: 371px) and (max-width: 961px) {
+@media only screen and (max-width: 370px) and (min-width: 371px) and (max-width: 961px) {
   body {
     background-color: blue;
     /*logo pocas pulgas*/
@@ -1522,12 +1452,33 @@ a:visited {
     max-width: 200%;
     max-height: 180%;
   }
+  .logosRedesSociales {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: derecha;
+    width: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-left: 40%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .logosRedesSociales i {
+    font-size: 35px;
+  }
+  /* ESCRITORIO / DESKTOP!!!!! */
 }
 
-/* ESCRITORIO / DESKTOP!!!!! */
-@media only screen and (min-width: 962px) {
+@media only screen and (max-width: 370px) and (min-width: 371px) and (max-width: 961px) and (min-width: 962px) {
   body {
     background-color: #b695c0;
+    /*estilos para mi parrafo*/
   }
   body .barraLateral {
     float: left;
@@ -1564,13 +1515,15 @@ a:visited {
     padding-bottom: 20px;
   }
   body .tituloDonaciones {
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Caveat', cursive;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    color: #a728a7;
+    font-size: 30px;
   }
   body .imgDonaciones {
     width: 400px;
@@ -1592,6 +1545,101 @@ a:visited {
         -ms-flex-pack: center;
             justify-content: center;
     font-family: 'Caveat', cursive;
+  }
+  body .contenedorParrafo {
+    border-top: 3px dashed #242121;
+    border-bottom: 3px dashed #242121;
+    -o-object-fit: cover;
+       object-fit: cover;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: right;
+        -ms-flex-pack: right;
+            justify-content: right;
+    height: 250px;
+    margin: 20px 30px 20px 30px;
+  }
+  body .parrafoPocasPulgas {
+    color: #242222;
+    font-size: 30px;
+    line-height: 1.5;
+    font-family: 'Caveat', cursive;
+  }
+  body .donacionesPocasPulgas {
+    width: 90%;
+    margin: auto;
+    border: 5px double #292626;
+    -o-object-fit: cover;
+       object-fit: cover;
+    -webkit-transition: height 2s;
+    transition: height 2s;
+    /*Transiciones*/
+  }
+  body .donacionesPocasPulgas .imgDonaciones {
+    margin: 30px 20px 30px 40px;
+  }
+  body .donacionesPocasPulgas .donacionesPocasPulgas .imgDonaciones:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 15px #631063;
+            box-shadow: 0px 0px 15px 15px #631063;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  /*mapa de llegada al refugio]*/
+  .mapaDeLlegada {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'izquierda  derecha';
+    margin-top: 40px;
+    margin-bottom: 40px;
+  }
+  .mapa {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: izquierda;
+    margin: auto;
+  }
+  .videoExplicativo {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: derecha;
+    margin: auto;
+  }
+  .logosRedesSociales {
+    -ms-grid-row: 1;
+    -ms-grid-column: 3;
+    grid-area: derecha;
+    width: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    display: inline;
+  }
+  .logosRedesSociales i {
+    font-size: 35px;
+  }
+  .logosRedesSociales footer {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'izquierda centro derecha';
+    font-family: 'Caveat', cursive;
+    margin: 40px 0 40px 0;
+  }
+  .logosRedesSociales footer h4 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: centro;
+    margin-top: auto;
+    font-size: 20px;
   }
 }
 /*# sourceMappingURL=style.css.map */
