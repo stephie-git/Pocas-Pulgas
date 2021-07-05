@@ -10,6 +10,7 @@
         background-size: contain;
         width: 100%;
         max-width: 100%;
+        color: azure;
 
         .logo{
             width: 20%;
@@ -124,6 +125,7 @@
             flex-wrap: nowrap;
             background-repeat: no-repeat;
             background-size: contain;
+            background-color: azure;
             
         }
 
@@ -240,8 +242,8 @@
                 flex-direction:row;
                 justify-content: space-around;
                 .image{
-                    width: 300px;
-                    max-width:400px;
+                    width: 450px;
+                    max-width:450px;
                     min-height: 280;
                     max-height:400px;
                     margin: 20px 15px 20px 30px;
@@ -260,6 +262,7 @@
             padding-bottom:20px;
             background-repeat: no-repeat;
             background-size: contain;
+            background-color: rgb(255, 253, 253);
         }
 
         .tituloDonaciones{
