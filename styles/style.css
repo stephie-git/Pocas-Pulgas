@@ -154,10 +154,6 @@ ul {
   margin: 20px 25px 20px 25px;
 }
 
-.tituloObjetivos {
-  color: indigo;
-}
-
 .listaDesordenada {
   color: #161515;
   font-size: 25px;
@@ -207,12 +203,6 @@ ul {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.tituloObjetivos {
-  text-align: center;
-  margin-top: 45px;
-  margin-bottom: 27px;
 }
 
 .footerNosotros {
@@ -1369,6 +1359,76 @@ a:visited {
     margin-top: auto;
     font-size: 20px;
   }
+  .imagenNosotros {
+    margin: auto;
+    width: 350px;
+  }
+  .sectionForm {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 250px;
+  }
+  .form input {
+    margin: 5px;
+  }
+  .form :last-child {
+    margin: 20px;
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .cabeceraTransitos {
+    background-image: url(../Imagenes/Mascotas.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 100%;
+    color: azure;
+  }
+  .logo {
+    width: 20%;
+    height: 20%;
+    margin: 2px 70px 5px 2px;
+  }
+  .primerTituloTransitorio {
+    margin-top: 70px;
+    text-align: center;
+  }
+  .transitosFotos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .transitosFotos img {
+    width: 300px;
+    height: 300px;
+    margin: 0px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
 }
 
 /* TABLET !!!!!*/
@@ -1504,6 +1564,38 @@ a:visited {
   .logosRedesSociales i {
     font-size: 35px;
   }
+  .cabeceraNosotros {
+    background-image: url(../Imagenes/Mascotas.jpg);
+    background-size: 200%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: azure;
+  }
+  /*logo pocas pulgas*/
+  .logo {
+    width: 16%;
+    height: 16%;
+  }
+  .imagenNosotros {
+    width: 400px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .tituloObjetivos {
+    font: 35px;
+    color: #a728a7;
+    text-align: center;
+  }
 }
 
 /* ESCRITORIO / DESKTOP!!!!! */
@@ -1525,11 +1617,14 @@ a:visited {
         justify-content: space-around;
   }
   body .accesosDirectos div .image {
-    width: 450px;
+    width: 400px;
     max-width: 450px;
     min-height: 280;
     max-height: 400px;
     margin: 20px 15px 20px 30px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
   body .cabecera {
     display: -webkit-box;
@@ -1548,16 +1643,6 @@ a:visited {
     background-repeat: no-repeat;
     background-size: contain;
     background-color: #fffdfd;
-  }
-  body .tituloDonaciones {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    color: #a728a7;
-    font-size: 30px;
   }
   body .primerTituloImagenes {
     font-size: 30px;
@@ -1590,21 +1675,25 @@ a:visited {
     line-height: 1.5;
   }
   body .donacionesPocasPulgas {
-    width: 100%;
-    margin: auto;
     border: 5px double #292626;
-    -o-object-fit: cover;
-       object-fit: cover;
     -webkit-transition: height 2s;
     transition: height 2s;
   }
-  body .imgDonaciones {
-    width: 300px;
-    height: 170px;
-    display: inline-block;
-    margin: 10px;
-    -webkit-transition: height 2s;
-    transition: height 2s;
+  body .donacionesPocasPulgas .tituloDonaciones {
+    text-align: center;
+    color: #a728a7;
+    font-size: 30px;
+    margin-bottom: 20px;
+  }
+  body .donacionesPocasPulgas a {
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 500px;
+  }
+  body .donacionesPocasPulgas .imgDonaciones {
+    width: 40%;
   }
   body .donacionesPocasPulgas .imgDonaciones:hover {
     border-radius: 50%;
@@ -1624,17 +1713,24 @@ a:visited {
         grid-template-areas: 'izquierda  derecha';
     margin-top: 40px;
     margin-bottom: 40px;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .mapa {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: izquierda;
+    width: 450px;
+    height: 450px;
     margin: auto;
   }
   .videoExplicativo {
     -ms-grid-row: 1;
     -ms-grid-column: 3;
     grid-area: derecha;
+    width: 450px;
+    height: 450px;
     margin: auto;
   }
   .logosRedesSociales {
@@ -1666,6 +1762,39 @@ a:visited {
     grid-area: centro;
     margin-top: auto;
     font-size: 20px;
+  }
+  .cabeceraNosotros {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    width: 100%;
+    max-width: 100%;
+    background-image: url(../Imagenes/Mascotas.jpg);
+    padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: #fffdfd;
+  }
+  .tituloMision {
+    margin-top: 30px;
+    text-align: center;
+  }
+  .tituloObjetivos {
+    color: #a728a7;
+    font-size: 30px;
+    text-align: center;
+  }
+  .parrafosNosotros {
+    color: #161515;
+  }
+  .item {
+    color: #161515;
   }
 }
 /*# sourceMappingURL=style.css.map */
