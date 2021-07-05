@@ -1,18 +1,15 @@
 @mixin parrafo{
     
-        font-family: 'Caveat', cursive;
         word-spacing: 5px;
         line-height: 25px;
         color: $colorTexto;
         text-decoration: wavy;
-        font-family: 'Caveat', cursive;
     
 }
 
 @mixin titulosPrincipales{
     font-size: $titulosPrincipales;
-    color: $colorTitulos;
-    font-family: 'Caveat', cursive;
+    color: $colorTitulos
 
 }
 

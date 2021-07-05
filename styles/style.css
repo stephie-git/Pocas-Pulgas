@@ -145,7 +145,6 @@ ul {
 .tituloMision {
   font-size: 30px;
   color: #a728a7;
-  font-family: 'Caveat', cursive;
   margin: 30px 40px 10px 40px;
   text-align: center;
 }
@@ -167,7 +166,6 @@ ul {
 .item {
   margin: 10px;
   display: block;
-  font-family: 'Caveat', cursive;
   font-size: 23px;
 }
 
@@ -183,13 +181,11 @@ ul {
 }
 
 .itemParrafo {
-  font-family: 'Caveat', cursive;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: 'Caveat', cursive;
   margin: 30px 40px 30px 40px;
   font-size: 25px;
 }
@@ -409,7 +405,6 @@ ul {
 .tituloCastracion {
   font-size: 30px;
   color: #a728a7;
-  font-family: 'Caveat', cursive;
   margin-top: 90px;
   text-align: center;
 }
@@ -418,44 +413,37 @@ ul {
 .importanciaCastraciones {
   font-size: 30px;
   color: #a728a7;
-  font-family: 'Caveat', cursive;
   margin-top: 90px;
   text-align: center;
 }
 
 /*parrafo informativo*/
 .primerParrafo {
-  font-family: 'Caveat', cursive;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: 'Caveat', cursive;
   font-size: 23px;
   margin: 20px 30px 20px 30px;
 }
 
 .segundoParrafo {
-  font-family: 'Caveat', cursive;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: 'Caveat', cursive;
   font-size: 23px;
   margin: 20px 30px 20px 30px;
 }
 
 .tercerParrafo {
-  font-family: 'Caveat', cursive;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: 'Caveat', cursive;
   font-size: 23px;
   margin: 20px 30px 20px 30px;
 }
@@ -541,13 +529,11 @@ a:visited {
 }
 
 .parrafoDonaciones {
-  font-family: 'Caveat', cursive;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: 'Caveat', cursive;
   line-height: 1,8px;
   font-size: 25px;
   margin: 60px 25px 30px 25px;
@@ -705,7 +691,6 @@ a:visited {
 .mismoTitulo {
   font-size: 30px;
   color: #a728a7;
-  font-family: 'Caveat', cursive;
   margin-left: 40px;
 }
 
@@ -888,13 +873,11 @@ body {
 }
 
 .mismoParrafo {
-  font-family: 'Caveat', cursive;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: 'Caveat', cursive;
   font-size: 25px;
   margin: 25px 30px 25px 30px;
 }
@@ -902,7 +885,6 @@ body {
 .mismoTitulo {
   font-size: 30px;
   color: #a728a7;
-  font-family: 'Caveat', cursive;
 }
 
 footer {
@@ -1106,13 +1088,11 @@ ul {
 }
 
 .parrafoAdopcionesNuestras {
-  font-family: 'Caveat', cursive;
   word-spacing: 5px;
   line-height: 25px;
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: 'Caveat', cursive;
   font-family: 'Caveat', cursive;
   font-size: 20px;
   margin: 20px 30px 20px 30px;
@@ -1121,7 +1101,6 @@ ul {
 .requisitos {
   font-size: 30px;
   color: #a728a7;
-  font-family: 'Caveat', cursive;
   color: #a728a7;
   text-align: center;
 }
@@ -1139,7 +1118,6 @@ h3 {
 .tituloTips {
   font-size: 30px;
   color: #a728a7;
-  font-family: 'Caveat', cursive;
   font-size: 25px;
   color: #a728a7;
   text-align: center;
@@ -1159,7 +1137,6 @@ h3 {
 .tituloList {
   font-size: 30px;
   color: #a728a7;
-  font-family: 'Caveat', cursive;
   font-size: 25px;
   color: #a728a7;
 }
@@ -1582,7 +1559,6 @@ a:visited {
   body .primerTituloImagenes {
     font-size: 30px;
     color: #a728a7;
-    font-family: 'Caveat', cursive;
     color: #a728a7;
     display: -webkit-box;
     display: -ms-flexbox;
