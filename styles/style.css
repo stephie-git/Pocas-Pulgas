@@ -1319,7 +1319,6 @@ a:visited {
     font-size: 25px;
     margin: 10px 45px 30px 45px;
     text-align: center;
-    font-family: 'Caveat', cursive;
   }
   body .contenedorParrafo {
     margin: 20px 30px 20px 30px;
@@ -1334,10 +1333,8 @@ a:visited {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 5px 10px 5px 10px;
-    font-family: 'Caveat', cursive;
   }
   body .tituloDonaciones {
-    font-family: 'Caveat', cursive;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1388,7 +1385,6 @@ a:visited {
     display: -ms-flexbox;
     display: flex;
     display: inline;
-    font-family: 'Caveat', cursive;
   }
   footer h4 {
     grid-area: centro;
@@ -1442,7 +1438,6 @@ a:visited {
     text-align: center;
     color: #a728a7;
     font: size 50px;
-    font-family: 'Caveat', cursive;
   }
   body .donacionesPocasPulgas {
     display: -webkit-box;
@@ -1470,10 +1465,8 @@ a:visited {
   body .tituloDonaciones {
     text-align: center;
     font-size: 27px;
-    font-family: 'Caveat', cursive;
   }
   body .parrafoPocasPulgas {
-    font-family: 'Caveat', cursive;
     font-size: 25px;
     margin: 5px 10px;
     text-align: center;
@@ -1577,7 +1570,6 @@ a:visited {
     background-size: contain;
   }
   body .tituloDonaciones {
-    font-family: 'Caveat', cursive;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1598,7 +1590,6 @@ a:visited {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-    font-family: 'Caveat', cursive;
   }
   body .contenedorParrafo {
     border-top: 3px dashed #242121;
@@ -1618,7 +1609,6 @@ a:visited {
     color: #242222;
     font-size: 25px;
     line-height: 1.5;
-    font-family: 'Caveat', cursive;
   }
   body .donacionesPocasPulgas {
     width: 100%;
@@ -1689,7 +1679,6 @@ a:visited {
     -ms-grid-rows: 1fr;
         grid-template-rows: 1fr;
         grid-template-areas: 'izquierda centro derecha';
-    font-family: 'Caveat', cursive;
     margin: 40px 0 40px 0;
   }
   footer h4 {

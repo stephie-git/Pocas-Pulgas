@@ -33,7 +33,6 @@
             font-size: 25px;
             margin: 10px 45px 30px 45px;
             text-align: center;
-            font-family: 'Caveat', cursive;
         }
 
         .contenedorParrafo {
@@ -47,13 +46,13 @@
             display: flex;
             justify-content: center;
             margin: 5px 10px 5px 10px;
-            font-family: 'Caveat', cursive;
+            
         }
 
   
     
         .tituloDonaciones{
-            font-family: 'Caveat', cursive;
+            
             display: flex;
             justify-content: center;
             font-size: 0,5px;
@@ -97,7 +96,7 @@
     footer {
         display: flex;
         display: inline;
-        font-family: 'Caveat', cursive;
+        
         
         h4{
             grid-area:centro;
@@ -151,7 +150,7 @@
             text-align: center;
             color: $colorTitulos;
             font: size 50px;
-            font-family: 'Caveat', cursive;
+            
         }
 
 
@@ -176,12 +175,12 @@
         .tituloDonaciones{
             text-align: center;
             font-size: 27px;
-            font-family: 'Caveat', cursive;
+            
 
         }
 
         .parrafoPocasPulgas{
-            font-family: 'Caveat', cursive;
+            
             font-size: 25px;
             margin: 5px 10px;
             text-align: center;
@@ -264,7 +263,7 @@
         }
 
         .tituloDonaciones{
-            font-family: 'Caveat', cursive;
+            
             display: flex;
             justify-content: center;
             color: #a728a7;
@@ -279,7 +278,7 @@
             color: $colorTitulos;
             display: flex;
             justify-content: center;
-            font-family: 'Caveat', cursive;
+            
            
         }
 
@@ -293,7 +292,7 @@
             color: rgb(36, 34, 34);
             font-size: 25px;
             line-height: 1.5;
-            font-family: 'Caveat', cursive;
+            
         }
        .donacionesPocasPulgas {
             width: 100%;
@@ -354,7 +353,7 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas: 'izquierda centro derecha';
-        font-family: 'Caveat', cursive;
+        
         margin: 40px 0 40px 0;
         h4{
             grid-area:centro;
