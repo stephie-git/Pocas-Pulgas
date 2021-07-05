@@ -60,26 +60,6 @@ i {
   color: indigo;
 }
 
-footer {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[3];
-      grid-template-columns: repeat(3, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: 'izquierda centro derecha';
-  font-family: 'Caveat', cursive;
-  margin: 40px 0 40px 0;
-}
-
-footer h4 {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: centro;
-  margin-top: auto;
-  font-size: 20px;
-}
-
 /*Barra desplegable de perros y gatos*/
 #barraDesplegable li > a {
   background-color: grey;
@@ -276,6 +256,18 @@ ul {
       -ms-flex-direction: column;
           flex-direction: column;
   width: 350px;
+}
+
+.form input {
+  margin: 5px;
+}
+
+.form :last-child {
+  margin: 20px;
+  width: 50%;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
 }
 
 /*Estilos para Transitos*/
@@ -1303,12 +1295,14 @@ a:visited {
   /*ordinary css rules*/
   .cabecera {
     background-image: url(../Imagenes/Mascotas.jpg);
-    background-size: 98%;
     background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    max-width: 100%;
   }
   .cabecera .logo {
-    width: 70px;
-    height: 65px;
+    width: 20%;
+    height: 20%;
     margin: 2px 70px 5px 2px;
   }
   body {
@@ -1316,13 +1310,14 @@ a:visited {
     /*Transiciones*/
   }
   body .image {
-    max-width: 100%;
+    max-width: 70%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    margin-left: 50px;
   }
   body .primerTituloImagenes {
     font-size: 25px;
@@ -1400,19 +1395,18 @@ a:visited {
     font-family: 'Caveat', cursive;
   }
   footer h4 {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
     grid-area: centro;
     margin-top: auto;
     font-size: 20px;
   }
-  /* TABLET !!!!!*/
 }
 
-@media only screen and (max-width: 370px) and (min-width: 371px) and (max-width: 961px) {
+/* TABLET !!!!!*/
+@media only screen and (min-width: 371px) and (max-width: 961px) {
   body {
     background-color: blue;
     /*logo pocas pulgas*/
+    /*Transiciones*/
   }
   body .cabecera {
     background-image: url(../Imagenes/Mascotas.jpg);
@@ -1427,61 +1421,34 @@ a:visited {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     background-repeat: no-repeat;
+    background-size: contain;
   }
   body .logo {
-    width: 120px;
-    height: 90px;
+    width: 16%;
+    height: 16%;
   }
-  body .image {
+  body .accesosDirectos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .accesosDirectos div .image {
     width: 270px;
     height: 250px;
     margin: 10px;
   }
   body .primerTituloImagenes {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    text-align: center;
     color: #a728a7;
-    font: size 15px;
-    margin-left: 50px;
+    font: size 50px;
+    font-family: 'Caveat', cursive;
   }
-  body .imgDonaciones {
-    max-width: 200%;
-    max-height: 180%;
-  }
-  .logosRedesSociales {
-    -ms-grid-row: 1;
-    -ms-grid-column: 2;
-    grid-area: derecha;
-    width: 180px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    margin-left: 40%;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-  }
-  .logosRedesSociales i {
-    font-size: 35px;
-  }
-  /* ESCRITORIO / DESKTOP!!!!! */
-}
-
-@media only screen and (max-width: 370px) and (min-width: 371px) and (max-width: 961px) and (min-width: 962px) {
-  body {
-    background-color: #b695c0;
-    /*estilos para mi parrafo*/
-  }
-  body .barraLateral {
-    float: left;
+  body .donacionesPocasPulgas {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1489,15 +1456,112 @@ a:visited {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    gap: 20px;
   }
-  body .image {
-    margin: 20px 30px 20px 30px;
+  body .donacionesPocasPulgas a {
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    max-width: 500px;
+  }
+  body .donacionesPocasPulgas .imgDonaciones {
+    width: 100%;
+  }
+  body .tituloDonaciones {
+    text-align: center;
+    font-size: 27px;
+    font-family: 'Caveat', cursive;
+  }
+  body .parrafoPocasPulgas {
+    font-family: 'Caveat', cursive;
+    font-size: 25px;
+    margin: 5px 10px;
+    text-align: center;
+  }
+  body .donacionesPocasPulgas .imgDonaciones:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 15px #631063;
+            box-shadow: 0px 0px 15px 15px #631063;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+  body .mapaDeLlegada {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin-top: 40px;
+    gap: 15px;
+  }
+  body .mapaDeLlegada .mapa {
+    width: 350px;
+    height: 340px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body .mapaDeLlegada .videoExplicativo {
+    width: 350px;
+    height: 340px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .logosRedesSociales {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .logosRedesSociales i {
+    font-size: 35px;
+  }
+}
+
+/* ESCRITORIO / DESKTOP!!!!! */
+@media only screen and (min-width: 962px) {
+  body {
+    background-color: #b695c0;
+    /*estilos para mi parrafo*/
+    /*Transiciones*/
+  }
+  body .accesosDirectos div {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  body .accesosDirectos div .image {
+    width: 300px;
+    max-width: 400px;
+    min-height: 280;
+    max-height: 400px;
+    margin: 20px 15px 20px 30px;
   }
   body .cabecera {
     display: -webkit-box;
@@ -1510,9 +1574,11 @@ a:visited {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
     width: 100%;
+    max-width: 100%;
     background-image: url(../Imagenes/Mascotas.jpg);
-    background-size: cover;
     padding-bottom: 20px;
+    background-repeat: no-repeat;
+    background-size: contain;
   }
   body .tituloDonaciones {
     font-family: 'Caveat', cursive;
@@ -1524,14 +1590,6 @@ a:visited {
             justify-content: center;
     color: #a728a7;
     font-size: 30px;
-  }
-  body .imgDonaciones {
-    width: 400px;
-    height: 200px;
-    display: inline-block;
-    margin: 10px;
-    -webkit-transition: height 2s;
-    transition: height 2s;
   }
   body .primerTituloImagenes {
     font-size: 30px;
@@ -1562,24 +1620,28 @@ a:visited {
   }
   body .parrafoPocasPulgas {
     color: #242222;
-    font-size: 30px;
+    font-size: 25px;
     line-height: 1.5;
     font-family: 'Caveat', cursive;
   }
   body .donacionesPocasPulgas {
-    width: 90%;
+    width: 100%;
     margin: auto;
     border: 5px double #292626;
     -o-object-fit: cover;
        object-fit: cover;
     -webkit-transition: height 2s;
     transition: height 2s;
-    /*Transiciones*/
   }
-  body .donacionesPocasPulgas .imgDonaciones {
-    margin: 30px 20px 30px 40px;
+  body .imgDonaciones {
+    width: 300px;
+    height: 170px;
+    display: inline-block;
+    margin: 10px;
+    -webkit-transition: height 2s;
+    transition: height 2s;
   }
-  body .donacionesPocasPulgas .donacionesPocasPulgas .imgDonaciones:hover {
+  body .donacionesPocasPulgas .imgDonaciones:hover {
     border-radius: 50%;
     -webkit-box-shadow: 0px 0px 15px 15px #631063;
             box-shadow: 0px 0px 15px 15px #631063;
@@ -1623,7 +1685,7 @@ a:visited {
   .logosRedesSociales i {
     font-size: 35px;
   }
-  .logosRedesSociales footer {
+  footer {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[3];
@@ -1634,7 +1696,7 @@ a:visited {
     font-family: 'Caveat', cursive;
     margin: 40px 0 40px 0;
   }
-  .logosRedesSociales footer h4 {
+  footer h4 {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: centro;

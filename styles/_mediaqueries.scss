@@ -6,23 +6,26 @@
 
     .cabecera{
         background-image: url(../Imagenes/Mascotas.jpg);
-        background-size: 98%;
         background-repeat: no-repeat;
+        background-size: contain;
+        width: 100%;
+        max-width: 100%;
 
         .logo{
-            width: 70px;
-            height: 65px;
+            width: 20%;
+            height: 20%;
             margin: 2px 70px 5px 2px;
-            }
+        }
         
     }
 
     body{
         background-color:red;
         .image{
-            max-width:100%;
+            max-width:70%;
             display: flex;
             justify-content: center;
+            margin-left: 50px;
         }
 
         .primerTituloImagenes{
@@ -89,17 +92,18 @@
         }
     } 
 
-            /////*Estilo Footer*/////
-            footer {
-                display: flex;
-                display: inline;
-                font-family: 'Caveat', cursive;
-                
-            h4{
-                grid-area:centro;
-                margin-top: auto;
-                font-size: 20px;
-            }
+    /////*Estilo Footer*/////
+    footer {
+        display: flex;
+        display: inline;
+        font-family: 'Caveat', cursive;
+        
+        h4{
+            grid-area:centro;
+            margin-top: auto;
+            font-size: 20px;
+        }
+    }
 }
     
 
@@ -111,7 +115,7 @@
 @media only screen and (min-width: 371px) and (max-width: 961px) {
     body{
         background-color:blue;
-
+        
         .cabecera{
             background-image: url(../Imagenes/Mascotas.jpg);
             background-size: 115%;
@@ -119,76 +123,143 @@
             flex-direction:column;
             flex-wrap: nowrap;
             background-repeat: no-repeat;
+            background-size: contain;
             
         }
 
         /*logo pocas pulgas*/
 
         .logo{
-            width: 120px;
-            height: 90px;
+            width: 16%;
+            height: 16%;
         }
-
-        .image{
-            width: 270px;
-            height: 250px;
-            margin: 10px ;
+        .accesosDirectos{
+            div{
+                display: flex;
+                flex-wrap:wrap;
+                justify-content:center;
+                .image{
+                    width: 270px;
+                    height: 250px;
+                    margin: 10px ;
+                }
+            }
         }
 
         .primerTituloImagenes{
-            display: flex;
-            justify-content: center;
+            text-align: center;
             color: $colorTitulos;
-            font: size 15px;
-            margin-left: 50px;
+            font: size 50px;
+            font-family: 'Caveat', cursive;
         }
 
 
-        .imgDonaciones{
-           max-width: 200%;
-           max-height: 180%;
+        
+        .donacionesPocasPulgas{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            gap:20px;
+            a{
+                width:80%;
+                align-self:center;
+                max-width:500px;
+                
+            }
+            .imgDonaciones{
+               width:100%;
+            }
+        }
+
+
+        .tituloDonaciones{
+            text-align: center;
+            font-size: 27px;
+            font-family: 'Caveat', cursive;
 
         }
+
+        .parrafoPocasPulgas{
+            font-family: 'Caveat', cursive;
+            font-size: 25px;
+            margin: 5px 10px;
+            text-align: center;
+
+        }
+
+          /*Transiciones*/
+
+          .donacionesPocasPulgas .imgDonaciones:hover{
+            border-radius:50%;
+            box-shadow: 0px 0px 15px 15px rgb(99, 16, 99);
+            transform: rotate(360deg);
+        }
+
+        .mapaDeLlegada{
+           display: flex;
+           justify-content: center;
+           flex-direction: column;
+           margin-top: 40px;
+           gap:15px;
+           .mapa{
+               width:350px;
+               height:340px;
+               align-self:center;    
+           }
+           .videoExplicativo{
+               width: 350px;
+               height:340px;
+               align-self:center;
+           }
+
+        }
+    
 
     }
 
     .logosRedesSociales{
-        grid-area:derecha;
-        width:180px;
         display: flex;
+        justify-content: center;
+        width:100%;
         flex-direction: row;
-        margin-left:40%;
         justify-content: space-between;
         i{
             font-size: 35px;
         }
+    }
 }
 
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px){
     body{
         background-color: $backgroundLila;;
-        .barraLateral{
-            float: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: space-between;
-            justify-content: center;
-        }
-
-        .image{
-            margin: 20px 30px 20px 30px;
-
+        
+        .accesosDirectos{
+            div{
+                display:flex;
+                flex-direction:row;
+                justify-content: space-around;
+                .image{
+                    width: 300px;
+                    max-width:400px;
+                    min-height: 280;
+                    max-height:400px;
+                    margin: 20px 15px 20px 30px;
+                    
+                }
+            }
         }
 
         .cabecera{
             display:flex;
             flex-direction:column;
             flex-wrap:nowrap;
-            width:100%;
+            width: 100%;
+            max-width: 100%;
             background-image: url(../Imagenes/Mascotas.jpg);
-            background-size: cover;
             padding-bottom:20px;
+            background-repeat: no-repeat;
+            background-size: contain;
         }
 
         .tituloDonaciones{
@@ -200,13 +271,7 @@
             
         }
 
-        .imgDonaciones{
-            width: 400px;
-            height: 200px;
-            display: inline-block;
-            margin: 10px;
-            transition: height 2s;
-        }
+       
 
         .primerTituloImagenes{
             @include titulosPrincipales;
@@ -225,21 +290,24 @@
         }
         .parrafoPocasPulgas {
             color: rgb(36, 34, 34);
-            font-size: 30px;
+            font-size: 25px;
             line-height: 1.5;
             font-family: 'Caveat', cursive;
-       }
-      
-       
+        }
        .donacionesPocasPulgas {
-        width: 90%;
-        margin: auto;
-        border: 5px double rgb(41, 38, 38);
-        object-fit: cover;
-        transition: height 2s;
-    
+            width: 100%;
+            margin: auto;
+            border: 5px double rgb(41, 38, 38);
+            object-fit: cover;
+            transition: height 2s;
+        }
+       
         .imgDonaciones{
-            margin: 30px 20px 30px 40px;
+            width: 300px;
+            height: 170px;
+            display: inline-block;
+            margin: 10px;
+            transition: height 2s;
         }
 
         /*Transiciones*/
@@ -248,13 +316,8 @@
         border-radius:50%;
         box-shadow: 0px 0px 15px 15px rgb(99, 16, 99);
         transform: rotate(360deg);
-        }
-    
+        }   
     }
-    }
-    
-
-    
     /*mapa de llegada al refugio]*/
 
     .mapaDeLlegada {
@@ -283,8 +346,8 @@
         i{
             font-size: 35px;
         }
-
-        /////*Estilo Footer*/////
+    }
+       /////*Estilo Footer*/////
     footer {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
@@ -292,19 +355,12 @@
         grid-template-areas: 'izquierda centro derecha';
         font-family: 'Caveat', cursive;
         margin: 40px 0 40px 0;
-    h4{
-        grid-area:centro;
-        margin-top: auto;
-        font-size: 20px;
+        h4{
+            grid-area:centro;
+            margin-top: auto;
+            font-size: 20px;
+        }
     }
-   
 }
-    
-      
-     
-
-    }
-    }
-}}
 
 
