@@ -131,7 +131,7 @@
         }
     }
 
-    .cabeceraTransitos{
+    .cabecera{
         background-image: url(../Imagenes/Mascotas.jpg);
         background-repeat: no-repeat;
         background-size: contain;
@@ -285,7 +285,7 @@
         }
     }
 
-    .cabeceraNosotros{
+    .cabecera{
             background-image: url(../Imagenes/Mascotas.jpg);
             background-size: 200%;
             display: flex;
@@ -314,6 +314,19 @@
             font: 35px;
             color: #a728a7;
             text-align: center;
+        }
+
+        .transitosFotos{
+            display: flex;
+            flex-direction:column;
+            gap:5px;
+            justify-content: center;
+
+            .transitosPocasPulgas{
+                width: 300px;
+                align-self: center;
+            }
+
         }
 
     
@@ -461,7 +474,7 @@
     }
 
 
-    .cabeceraNosotros{
+    .cabecera{
         display:flex;
         flex-direction:column;
         flex-wrap:nowrap;
