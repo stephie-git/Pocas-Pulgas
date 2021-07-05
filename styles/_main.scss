@@ -1,6 +1,7 @@
 
 *{
     box-sizing: border-box;
+    font-family: 'Caveat', arial; 
 }
 
  /*barra desplegable*/
@@ -159,14 +160,12 @@ ul{
   }
 
     .parrafosNosotros{
-        font-family: 'Caveat', cursive; 
         font-size: 25px;
         margin: 20px 25px 20px 25px;
     }
 
  .tituloObjetivos{
     color:indigo;
-     font-family: 'Caveat', cursive; 
  }
 
   .listaDesordenada {
@@ -226,7 +225,6 @@ ul{
 
 .footerNosotros{
     text-align: center;
-    font-family: 'Caveat', cursive;
 }
 
 .imagenNosotros{
@@ -275,7 +273,6 @@ ul{
 }
 
 .parrafoTransitos{
-    font-family: 'Caveat', cursive;
     font-size: $textoParrafo; 
     color: $colorVisited;
 }
@@ -284,13 +281,11 @@ ul{
 .primerTituloTransitorio{
     text-align: center;
     margin-bottom: 50px;
-    font-family: 'Caveat', cursive;
     color: #a728a7;
 }
 
 
 .transitorioTitulo{
-    font-family: 'Caveat', cursive;
     color: #a728a7;
     font-weight: bold;
     margin-left: 30px;
