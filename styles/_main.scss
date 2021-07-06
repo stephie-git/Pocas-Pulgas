@@ -81,45 +81,7 @@ ul{
 
 
 
-/* Transiciones*/
 
-.image:hover {
-    transition: all 0,2s ease;
-    transform: scale(1.1);
-}
- 
-.icono1{
-    transition: all 1.5s linear;
-}
-
-.icono2{
-    
-    transition: all 1.5s ease-in;
-}
-
-.icono3{
-    
-    transition: all 1.5s ease-out;
-}
-
-.icono4{
-    
-    transition: all 1.5s ease-in-out;
-}
-
-.icono5{
-    
-    transition: all 1.5s ease;
-}
-
-.barraLateral:hover .icono1,
-.barraLateral:hover .icono2,
-.barraLateral:hover .icono3,
-.barraLateral:hover .icono4,
-.barraLateral:hover .icono5 {
-    transform: translateX(70px);
-
-}
 
 ////*estilos para pagina Nosotros*/////
 

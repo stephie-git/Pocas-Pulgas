@@ -74,48 +74,6 @@ ul {
   display: block;
 }
 
-/* Transiciones*/
-.image:hover {
-  -webkit-transition: all 0,2s ease;
-  transition: all 0,2s ease;
-  -webkit-transform: scale(1.1);
-          transform: scale(1.1);
-}
-
-.icono1 {
-  -webkit-transition: all 1.5s linear;
-  transition: all 1.5s linear;
-}
-
-.icono2 {
-  -webkit-transition: all 1.5s ease-in;
-  transition: all 1.5s ease-in;
-}
-
-.icono3 {
-  -webkit-transition: all 1.5s ease-out;
-  transition: all 1.5s ease-out;
-}
-
-.icono4 {
-  -webkit-transition: all 1.5s ease-in-out;
-  transition: all 1.5s ease-in-out;
-}
-
-.icono5 {
-  -webkit-transition: all 1.5s ease;
-  transition: all 1.5s ease;
-}
-
-.barraLateral:hover .icono1,
-.barraLateral:hover .icono2,
-.barraLateral:hover .icono3,
-.barraLateral:hover .icono4,
-.barraLateral:hover .icono5 {
-  -webkit-transform: translateX(70px);
-          transform: translateX(70px);
-}
-
 .tituloMision {
   font-size: 30px;
   color: #a728a7;
@@ -804,26 +762,6 @@ body {
           box-sizing: border-box;
 }
 
-.logo {
-  width: 200px;
-  height: 160px;
-  border-radius: 70%;
-  margin: 20px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  cursor: pointer;
-}
-
-.mismoParrafo {
-  word-spacing: 5px;
-  line-height: 25px;
-  color: #2c2727;
-  -webkit-text-decoration: wavy;
-          text-decoration: wavy;
-  font-size: 25px;
-  margin: 25px 30px 25px 30px;
-}
-
 .mismoTitulo {
   font-size: 30px;
   color: #a728a7;
@@ -880,21 +818,6 @@ ul {
   display: block;
 }
 
-.perrosEnAdopcion {
-  width: 100%;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 250px 250px 250px;
-      grid-template-columns: 250px 250px 250px;
-  -ms-grid-rows: (1fr)[3];
-      grid-template-rows: repeat(3, 1fr);
-  grid-gap: 5px;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin: 20px 10px 50px 10px;
-}
-
 .cachorrosGrid {
   width: 100%;
   height: 100%;
@@ -902,7 +825,7 @@ ul {
      object-fit: cover;
 }
 
-#cachorro1 {
+.cachorrosGrid #cachorro1 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -911,7 +834,7 @@ ul {
   grid-row: 1/2;
 }
 
-#cachorro2 {
+.cachorrosGrid #cachorro2 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -920,7 +843,7 @@ ul {
   grid-row: 1/2;
 }
 
-#cachorro3 {
+.cachorrosGrid #cachorro3 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -929,7 +852,7 @@ ul {
   grid-row: 1/2;
 }
 
-#gato4 {
+.cachorrosGrid #gato4 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -938,7 +861,7 @@ ul {
   grid-row: 2/3;
 }
 
-#cachorro5 {
+.cachorrosGrid #cachorro5 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -947,7 +870,7 @@ ul {
   grid-row: 2/3;
 }
 
-#cachorro6 {
+.cachorrosGrid #cachorro6 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -956,7 +879,7 @@ ul {
   grid-row: 2/3;
 }
 
-#cachorro7 {
+.cachorrosGrid #cachorro7 {
   -ms-grid-column: 1;
   -ms-grid-column-span: 1;
   grid-column: 1/2;
@@ -965,7 +888,7 @@ ul {
   grid-row: 3/4;
 }
 
-#cachorro8 {
+.cachorrosGrid #cachorro8 {
   -ms-grid-column: 2;
   -ms-grid-column-span: 1;
   grid-column: 2/3;
@@ -974,7 +897,7 @@ ul {
   grid-row: 3/4;
 }
 
-#cachorro9 {
+.cachorrosGrid #cachorro9 {
   -ms-grid-column: 3;
   -ms-grid-column-span: 1;
   grid-column: 3/4;
@@ -2062,6 +1985,165 @@ a:visited {
   body .gatosEnAdopcion .fotosGatos {
     width: 100%;
     height: 100%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica;
+}
+
+/* MOBILE!!!!!!! */
+@media only screen and (max-width: 370px) {
+  /*ordinary css rules*/
+  #barraDesplegable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 15px 10px 10px 10px;
+  }
+  #barraDesplegable ul {
+    display: none;
+  }
+  #barraDesplegable input:checked ~ ul {
+    display: block;
+  }
+  #barraDesplegable input {
+    display: none;
+  }
+  #barraDesplegable label {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  #barraDesplegable li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+  .cabecera {
+    background-image: url(../Imagenes/Mascotas.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    max-width: 80%;
+    color: azure;
+  }
+  .cabecera .logo {
+    width: 20%;
+    height: 20%;
+    margin: 2px 70px 5px 2px;
+  }
+  body .mismoTitulo {
+    font-size: 30px;
+    color: #a728a7;
+    text-align: center;
+    font-family: arial;
+    font-size: 25px;
+  }
+  body .mismoParrafo {
+    word-spacing: 5px;
+    line-height: 25px;
+    color: #2c2727;
+    -webkit-text-decoration: wavy;
+            text-decoration: wavy;
+    font-size: 25px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body .perrosEnAdopcion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  body .perrosEnAdopcion .cachorrosGrid {
+    width: 80%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+}
+
+/* TABLET !!!!!*/
+@media only screen and (min-width: 371px) and (max-width: 961px) {
+  /*Barra desplegable de perros y gatos*/
+  body {
+    background-color: blue;
+  }
+  body .mismoParrafo {
+    font-size: 25px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body .perrosEnAdopcion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+  body .perrosEnAdopcion .cachorrosGrid {
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  footer {
+    font-size: 25px;
+  }
+}
+
+/* ESCRITORIO / DESKTOP!!!!! */
+@media only screen and (min-width: 962px) {
+  body {
+    background-color: cadetblue;
+  }
+  body .perrosEnAdopcion {
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 250px 250px 250px;
+        grid-template-columns: 250px 250px 250px;
+    -ms-grid-rows: (1fr)[3];
+        grid-template-rows: repeat(3, 1fr);
+    grid-gap: 5px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin: 20px 10px 50px 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
