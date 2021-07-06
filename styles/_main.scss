@@ -24,33 +24,10 @@ a:visited{
 }
 
 
-/*Primeras imagenes*/
-
- .accesosDirectos {
-    margin: 70px 10px 70px 10px;
-    transition: height 2s;
-    
- }
-
- .image {
-    width: 430px;
-    height: 400px;
-    margin:calc(100%-50px);
-    object-fit: cover;     
- }
-
-
-/*logo pocas pulgas*/
-
- .logo{
-    @include logo;
-}
-
-
 /*cuerpo de la pagina*/
 
 body {
-    background-color: $backgroundLila;
+    background-color: cadetblue;
     background-size: 1400px;
     background-repeat: no-repeat;
 }
@@ -61,10 +38,6 @@ i{
     font-size: 30px;
     color:indigo;
 }
-
-
-
-
 
 /*Barra desplegable de perros y gatos*/
 
@@ -227,7 +200,7 @@ ul{
 
 
 .bodyNosotros{
-    background-color: $backgroundLila;
+    background-color: cadetblue;
 }
 
 .mismoTitulo{

@@ -1,5 +1,6 @@
 *{
     box-sizing: border-box;
+    font-family: Arial;
   }
 
 /*Estilos para el logo*/
@@ -12,7 +13,7 @@
 .parrafogato {
    font-size: 25px;
    margin: 20px 30px 60px 30px;
-   font-family: 'Caveat', cursive;
+   
 }
 
 /*titulo*/
@@ -24,25 +25,7 @@
 }
 
 
-/*Fotos de gatos en adopcion aplicadas con Grid*/
 
-.gatosEnAdopcion {
-   width: 100%;
-   display: grid;
-   grid-template-columns: 250px 250px 250px;
-   grid-template-rows: repeat(3, 1fr);
-   grid-gap: 5px;
-   justify-content: center;
-   margin: 20px 10px 50px 10px;
- 
-}
-
-.fotosGatos{
-    width: 100%;
-    height: 100%;
-    
-
-}
 
 #gato1 {
     grid-column: 1/2;
@@ -149,7 +132,7 @@ ul{
 
 footer{
     margin: 40px 45px 40px 45px;
-    font-family: 'Caveat', cursive;
+   
 }
 
 
