@@ -64,12 +64,14 @@
 
     body{
         background-color: cadetblue;
+        
         .image{
             max-width:70%;
             display: flex;
             justify-content: center;
             margin-left: 50px;
             gap: 20px;
+            object-fit: cover;
         }
 
         .primerTituloImagenes{
@@ -247,6 +249,7 @@
                     width: 270px;
                     height: 250px;
                     margin: 10px ;
+                    object-fit: cover;
                 }
             }
         }
@@ -272,7 +275,7 @@
                 
             }
             .imgDonaciones{
-               width:100%;
+               width:70%;
             }
         }
 
@@ -392,11 +395,11 @@
                 justify-content: space-around;
                 .image{
                     width: 400px;
-                    max-width:450px;
-                    min-height: 280;
+                    max-width:400px;
+                    min-height: 400;
                     max-height:400px;
-                    margin: 20px 15px 20px 30px;
                     align-self: center;
+                    object-fit: cover;
                     
                 }
             }
@@ -439,8 +442,9 @@
         }
        
         .donacionesPocasPulgas{
-            border: 5px double rgb(41, 38, 38);
             transition: height 2s;
+            width: 100%;
+            
         
 
             .tituloDonaciones{
@@ -451,14 +455,31 @@
                 
             }
 
+            .paginasIndexadas{
+                display: flex;
+                align-self: center;
+                gap: 5px;
+                margin-left: 40px;
+                margin-bottom: 20px;
+            
+               
+
             a{
-                width:80%;
-                align-self:center;
-                max-width:500px; 
+                width:100%;
+               
+               
                 
             }
             .imgDonaciones{
-               width:80%;
+               width:400px;
+               height: 250px;
+               display: flex;
+               align-items: center;
+              
+               
+              
+
+            }
 
             }
         }
@@ -479,7 +500,7 @@
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: 1fr;
         grid-template-areas: 'izquierda  derecha';
-        margin-top: 40px;
+        margin-top: 70px;
         margin-bottom: 40px;
         align-items: center;
     }
@@ -522,18 +543,7 @@
     }
 
 
-    .cabecera{
-        display:flex;
-        flex-direction:column;
-        flex-wrap:nowrap;
-        width: 100%;
-        max-width: 100%;
-        background-image: url(../Imagenes/Mascotas.jpg);
-        padding-bottom:20px;
-        background-repeat: no-repeat;
-        background-size: contain;
-        background-color: rgb(255, 253, 253);
-    }
+ 
     .tituloMision{
        margin-top: 30px;
        text-align: center; 
@@ -551,6 +561,10 @@
 
     .item{
         color: #161515;
+    }
+
+    footer{
+        margin-top: 60px;
     }
 
 }
