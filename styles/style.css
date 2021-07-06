@@ -466,34 +466,6 @@ a:visited {
   font-size: 25px;
 }
 
-.itemsDonaciones {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: (1fr)[2];
-      grid-template-columns: repeat(2, 1fr);
-  -ms-grid-rows: 1fr;
-      grid-template-rows: 1fr;
-      grid-template-areas: 'izquierda derecha';
-  margin-top: 80px;
-  margin-bottom: 80px;
-  font-family: 'Caveat', cursive;
-}
-
-.itemsDonaciones .metodosDePago {
-  -ms-grid-row: 1;
-  -ms-grid-column: 1;
-  grid-area: izquierda;
-  margin: auto;
-  font-size: 25px;
-  list-style: inherit;
-}
-
-.itemsDonaciones .mercadoPago {
-  -ms-grid-row: 1;
-  -ms-grid-column: 2;
-  grid-area: derecha;
-}
-
 .logo {
   width: 200px;
   height: 160px;
@@ -582,8 +554,56 @@ a:visited {
 }
 
 .card-img-top {
-  height: 300px;
-  width: 400px;
+  height: 200px;
+  width: 200px;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: arial;
+}
+
+/* MOBILE!!!!!!! */
+@media only screen and (max-width: 370px) {
+  /*ordinary css rules*/
+  .itemsDonaciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media only screen and (min-width: 962px) {
+  .itemsDonaciones {
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+    -ms-grid-rows: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 'izquierda derecha';
+    margin-top: 80px;
+    margin-bottom: 80px;
+    font-family: 'Caveat', cursive;
+  }
+  .itemsDonaciones .metodosDePago {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    grid-area: izquierda;
+    margin: auto;
+    font-size: 25px;
+    list-style: inherit;
+  }
+  .itemsDonaciones .mercadoPago {
+    -ms-grid-row: 1;
+    -ms-grid-column: 2;
+    grid-area: derecha;
+  }
 }
 
 * {
@@ -1192,7 +1212,7 @@ a:visited {
     margin: 2px 70px 5px 2px;
   }
   body {
-    background-color: red;
+    background-color: cadetblue;
     /*Transiciones*/
   }
   body .image {
@@ -1362,7 +1382,7 @@ a:visited {
 /* TABLET !!!!!*/
 @media only screen and (min-width: 371px) and (max-width: 961px) {
   body {
-    background-color: blue;
+    background-color: cadetblue;
     /*logo pocas pulgas*/
     /*Transiciones*/
   }
@@ -1640,7 +1660,7 @@ a:visited {
     max-width: 500px;
   }
   body .donacionesPocasPulgas .imgDonaciones {
-    width: 40%;
+    width: 80%;
   }
   body .donacionesPocasPulgas .imgDonaciones:hover {
     border-radius: 50%;
@@ -2144,6 +2164,12 @@ a:visited {
         -ms-flex-pack: center;
             justify-content: center;
     margin: 20px 10px 50px 10px;
+  }
+  body .mismoParrafo {
+    font-size: 25px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
