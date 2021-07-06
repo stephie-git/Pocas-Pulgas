@@ -445,6 +445,8 @@ a:visited {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: Arial, Helvetica;
+  background-color: cadetblue;
 }
 
 .bodyDonaciones {
@@ -543,22 +545,6 @@ a:visited {
   font-family: 'Caveat', cursive;
 }
 
-.cardsContainer div img {
-  min-height: 200px;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-
-.card-title {
-  width: 300px;
-  height: 5px;
-}
-
-.card-img-top {
-  height: 200px;
-  width: 200px;
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -577,6 +563,87 @@ a:visited {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+  }
+  .itemsDonaciones .liBody {
+    list-style: circle;
+  }
+  .itemsDonaciones .metodosDePago {
+    font-size: 25px;
+    list-style: circle;
+  }
+  .itemsDonaciones .mercadoPago {
+    width: 300px;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .itemsDonaciones .cardsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 30px;
+  }
+  .itemsDonaciones .card-title {
+    width: 100%;
+  }
+  .itemsDonaciones .card-img-top {
+    height: 100%;
+    width: 100%;
+  }
+  .itemsDonaciones .card-body {
+    width: 100%;
+  }
+}
+
+/* TABLET !!!!!*/
+@media only screen and (min-width: 371px) and (max-width: 961px) {
+  body .cardsContainer div img {
+    min-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    gap: 10px;
+  }
+  body .cardsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+  }
+  body .card-title {
+    width: 300px;
+    height: 5px;
+  }
+  body .card-img-top {
+    height: 300px;
+    width: 300px;
+  }
+  body .itemsDonaciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    margin-top: 40px;
+  }
+  body .metodosDePago {
+    font-family: Arial;
+    font-size: 25px;
+    list-style: circle;
+    width: 50%;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  body .mercadoPago {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    width: 400px;
   }
 }
 
@@ -599,12 +666,27 @@ a:visited {
     grid-area: izquierda;
     margin: auto;
     font-size: 25px;
-    list-style: inherit;
+    list-style: circle;
   }
   .itemsDonaciones .mercadoPago {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: derecha;
+    width: 200px;
+  }
+  .itemsDonaciones .cardsContainer div img {
+    min-height: 200px;
+    -o-object-fit: cover;
+       object-fit: cover;
+    gap: 10px;
+  }
+  .itemsDonaciones .card-title {
+    width: 300px;
+    height: 5px;
+  }
+  .itemsDonaciones .card-img-top {
+    height: 200px;
+    width: 200px;
   }
 }
 
@@ -1222,7 +1304,6 @@ a:visited {
   }
   body {
     background-color: cadetblue;
-    /*Transiciones*/
   }
   body .image {
     max-width: 70%;
@@ -1256,32 +1337,44 @@ a:visited {
             justify-content: center;
     margin: 5px 10px 5px 10px;
   }
-  body .tituloDonaciones {
+  body .paginasIndexadas {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    /*Transiciones*/
+  }
+  body .paginasIndexadas .tituloDonaciones {
+    text-align: center;
     font-size: 0,5px;
   }
-  body .imgDonaciones {
+  body .paginasIndexadas .imgDonaciones {
     max-width: 250px;
     margin: 15px 10px 15px 35px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center;
   }
-  body .donacionesPocasPulgas .imgDonaciones:hover {
-    border-radius: 50%;
-    -webkit-box-shadow: 0px 0px 15px 15px #631063;
-            box-shadow: 0px 0px 15px 15px #631063;
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
-  }
-  body .donacionesPocasPulgas {
+  body .paginasIndexadas .donacionesPocasPulgas {
     margin: 30px 20px 30px 20px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     display: inline;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  body .paginasIndexadas .donacionesPocasPulgas .imgDonaciones:hover {
+    border-radius: 50%;
+    -webkit-box-shadow: 0px 0px 15px 15px #631063;
+            box-shadow: 0px 0px 15px 15px #631063;
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
   }
   body .logosRedesSociales {
     display: -webkit-box;

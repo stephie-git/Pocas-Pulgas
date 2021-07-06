@@ -1,13 +1,13 @@
 
 *{
   box-sizing: border-box;
+  font-family: Arial, Helvetica;
+  background-color: cadetblue;
 }
 
 .bodyDonaciones{
-  background-color: $backgroundLila;
+  background-color: cadetblue;
 }
-
-
 
 .parrafoDonaciones {
   @include parrafo;
@@ -105,18 +105,3 @@ color:rgb(29, 27, 27);
   font-family: 'Caveat', cursive;
 }
 
-.cardsContainer div img {
-  min-height: 200px;
-  object-fit: cover;
-}
-
-
-.card-title{
-  width: 300px;
-  height: 5px;
-}
-
-.card-img-top{
-  height: 200px;
-  width: 200px;
-}

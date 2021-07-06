@@ -102,35 +102,45 @@
             
         }
 
-  
-    
-        .tituloDonaciones{
-            
+        .paginasIndexadas{
             display: flex;
             justify-content: center;
-            font-size: 0,5px;
+
+
+            .tituloDonaciones{
+            
+                text-align: center;
+                font-size: 0,5px;
+            }
+    
+            .imgDonaciones{
+                max-width: 250px;
+                margin: 15px 10px 15px 35px;
+                display: flex;
+                align-self: center;
+    
+            }
+
+            
+            .donacionesPocasPulgas{
+                margin: 30px 20px 30px 20px;
+                display: flex;
+                display: inline;
+                justify-content: center;
         }
-
-        .imgDonaciones{
-            max-width: 250px;
-            margin: 15px 10px 15px 35px;
-
+    
+            /*Transiciones*/
+    
+            .donacionesPocasPulgas .imgDonaciones:hover{
+            border-radius:50%;
+            box-shadow: 0px 0px 15px 15px rgb(99, 16, 99);
+            transform: rotate(360deg);
+            }
         }
-
-        /*Transiciones*/
-
-        .donacionesPocasPulgas .imgDonaciones:hover{
-        border-radius:50%;
-        box-shadow: 0px 0px 15px 15px rgb(99, 16, 99);
-        transform: rotate(360deg);
-        }
+    
+      
 
 
-        .donacionesPocasPulgas{
-            margin: 30px 20px 30px 20px;
-            display: flex;
-            display: inline;
-        }
         
         .logosRedesSociales{
             display: flex;

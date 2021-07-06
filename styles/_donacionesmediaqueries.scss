@@ -12,10 +12,136 @@
     .itemsDonaciones{
         display:flex;
         flex-direction: column;
+
+        .liBody{
+            list-style:circle;
+
+        }
+
+        .metodosDePago{
+            font-size: 25px;
+            list-style:circle;
+        }
+       .mercadoPago{
+         width: 300px;
+         align-self: center;
+         
+        }
+
+        .cardsContainer{
+            display: flex;
+            gap: 30px;
+        } 
+
+
+        .card-title{
+            width: 100%;
+} 
+        .card-img-top{
+            height: 100%;
+            width: 100%;
+          }
+
+          .card-body{
+            width: 100%;
+          }
+       
     }
      
 
 }
+
+
+/* TABLET !!!!!*/
+@media only screen and (min-width: 371px) and (max-width: 961px) {
+    body{
+    
+    
+            .cardsContainer div img {
+                min-height: 200px;
+                object-fit: cover;
+                gap: 10px;
+              }
+
+
+             .cardsContainer{
+                 display: flex;
+                 gap: 20px;
+             } 
+              
+              .card-title{
+                width: 300px;
+                height: 5px;
+              }
+              
+              .card-img-top{
+                height: 300px;
+                width: 300px;
+              }
+            
+              
+        .itemsDonaciones {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin-top: 40px;
+      
+        }
+        .metodosDePago{
+            font-family: Arial;
+            font-size: 25px;
+            list-style:circle;
+            width: 50%;
+            align-self: center;
+       
+           
+            
+        }
+        .mercadoPago{
+            align-self: center;
+            width: 400px;
+         
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
+
+
+
+
 
 @media only screen and (min-width: 962px){
     .itemsDonaciones {
@@ -31,12 +157,30 @@
             grid-area: izquierda;
             margin: auto;
             font-size: 25px;
-            list-style: inherit;
+            list-style:circle;
         }
        .mercadoPago{
          grid-area: derecha;
+         width: 200px;
          
         }
+
+        .cardsContainer div img {
+            min-height: 200px;
+            object-fit: cover;
+            gap: 10px;
+          }
+          
+          
+          .card-title{
+            width: 300px;
+            height: 5px;
+          }
+          
+          .card-img-top{
+            height: 200px;
+            width: 200px;
+          }
     }
 }
 
