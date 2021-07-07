@@ -466,28 +466,11 @@ ul {
 }
 
 /*barra desplegable*/
-.enlaces {
-  display: inline;
-  color: #160532;
-  font-size: 15px;
-  font-family: 'Rubik', sans-serif;
-  word-spacing: 60px;
-  letter-spacing: 5px;
-  margin: auto 35px;
-}
-
-a:visited {
-  color: #1d1b1b;
-}
-
-* {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  font-family: Arial, Helvetica;
-}
-
 /* MOBILE!!!!!!! */
 @media only screen and (max-width: 370px) {
+  h2 {
+    font-size: 20px;
+  }
   .cabecera {
     position: relative;
     background-image: url(../Imagenes/Mascotas.jpg);
@@ -502,31 +485,61 @@ a:visited {
     height: 20%;
     margin: 2px 70px 5px 2px;
   }
+  .importanciaCatraciones {
+    font-size: 25px;
+  }
   /*imagen*/
   .perrito {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 10px;
+    width: 100%;
+    margin: 0;
   }
   .perrito .fotoPerrito {
-    width: 100px;
+    width: 100%;
   }
   .perrito .fotoGatito {
-    width: 100px;
-  }
-  .perrito .importanciaCatraciones {
-    font-size: 25px;
+    width: 100%;
   }
 }
 
 /* TABLET !!!!!*/
+@media only screen and (min-width: 371px) and (max-width: 961px) {
+  .perrito {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+  }
+  .perrito img {
+    width: 80%;
+  }
+}
+
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px) {
   /*imagen*/
@@ -534,9 +547,9 @@ a:visited {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .perrito .fotoPerrito {
     width: 450px;
@@ -1308,15 +1321,6 @@ a:visited {
           filter: sepia(60%);
 }
 
-.perrito {
-  width: 1000px;
-  height: 270px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 70px auto 70px auto;
-}
-
 .perrito:hover {
   -webkit-transition-duration: 1s;
           transition-duration: 1s;
@@ -1803,6 +1807,29 @@ a:visited {
             flex-direction: column;
     margin: 25px 5px 10px 25px;
   }
+  .imagenesPerrosAdopciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+  }
+  .imagenesPerrosAdopciones .primerImagenNuestras {
+    width: 90%;
+    margin: 0;
+  }
+  .imagenesPerrosAdopciones .segundaImagenNuestras {
+    width: 90%;
+    margin: 0;
+  }
   footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2083,6 +2110,29 @@ a:visited {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+  .imagenesPerrosAdopciones {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    margin: 0;
+    gap: 20px;
+  }
+  .imagenesPerrosAdopciones .primerImagenNuestras {
+    width: 90%;
+    margin: 0;
+  }
+  .imagenesPerrosAdopciones .segundaImagenNuestras {
+    width: 90%;
+    margin: 0;
   }
 }
 

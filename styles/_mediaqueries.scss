@@ -116,6 +116,23 @@
         margin: 25px 5px 10px 25px;
         }
     } 
+    .imagenesPerrosAdopciones{
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        width:100%;
+        margin:0;
+        gap:10px;
+          .primerImagenNuestras{
+            width:90%;
+            margin:0;
+        }
+  
+          .segundaImagenNuestras{
+            width:90%;
+            margin:0;
+        }
+    }
 
     /////*Estilo Footer*/////
     footer {
@@ -365,7 +382,23 @@
             }
 
         }
-
+        .imagenesPerrosAdopciones{
+            display:flex;
+            flex-direction:column;
+            align-items:center;
+            width:100%;
+            margin:0;
+            gap:20px;
+              .primerImagenNuestras{
+                width:90%;
+                margin:0;
+            }
+      
+              .segundaImagenNuestras{
+                width:90%;
+                margin:0;
+            }
+        }
     
 }
 

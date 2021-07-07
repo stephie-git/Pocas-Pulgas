@@ -1,14 +1,9 @@
-*{
-    box-sizing: border-box;
-    font-family: Arial, Helvetica;
-    
-  }
-
-
-
 /* MOBILE!!!!!!! */
 
 @media only screen and (max-width: 370px) {
+  h2{
+    font-size:20px;
+  }
 
     .cabecera{
       position:relative;
@@ -26,42 +21,47 @@
         }
         
     }
+    .importanciaCatraciones{
+      font-size: 25px;
+    }
+    /*imagen*/
 
-
-     /*imagen*/
-
-    .perrito{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-      
-       
+  .perrito{
+      display: flex;
+      flex-direction:column;
+      justify-content: center;
+      align-items:center;
+      gap:10px;
+      width:100%;
+      margin:0;
 
     .fotoPerrito{
-        width: 100px;
-        
-
+        width: 100%;
     }
 
     .fotoGatito{
-        width: 100px;
+        width: 100%;
     }
-
-
-    .importanciaCatraciones{
-        font-size: 25px;
-
-    }
+  }
 }
 
-
-}
 
 
 
 /* TABLET !!!!!*/
 @media only screen and (min-width: 371px) and (max-width: 961px) {
-
+  .perrito{
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+    width:100%;
+    margin:0;
+    gap:20px;
+    img{
+      width:80%;
+    }
+  }
 }
 
 /* ESCRITORIO / DESKTOP!!!!! */
@@ -72,7 +72,7 @@
 
   .perrito{
     display: flex;
-    justify-content: center;
+    align-items:center;
 
     .fotoPerrito{
       width: 450px;
