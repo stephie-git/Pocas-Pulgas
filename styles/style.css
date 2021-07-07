@@ -430,7 +430,7 @@ ul {
 footer {
   margin: 40px 45px 40px 45px;
   text-align: center;
-  font-family: 'Caveat', cursive;
+  font-family: arial;
 }
 
 /*Barra desplegable de perros y gatos*/
@@ -547,6 +547,9 @@ ul {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
@@ -597,7 +600,7 @@ ul {
 
 .footerDonaciones {
   margin: 60px 40px 60px 40px;
-  font-family: 'Caveat', cursive;
+  font-family: arial;
 }
 
 #barraDesplegable li > a {
@@ -635,7 +638,7 @@ ul {
   display: inline;
   color: #160532;
   font-size: 15px;
-  font-family: 'Caveat', cursive;
+  font-family: arial;
   word-spacing: 60px;
   letter-spacing: 5px;
   margin: auto 35px;
@@ -648,7 +651,7 @@ a:visited {
 .tituloGracias {
   text-align: center;
   margin: 70px 5px 40px 5px;
-  font-family: 'Caveat', cursive;
+  font-family: arial;
 }
 
 * {
@@ -787,7 +790,7 @@ a:visited {
         grid-template-areas: 'izquierda derecha';
     margin-top: 80px;
     margin-bottom: 80px;
-    font-family: 'Caveat', cursive;
+    font-family: arial;
   }
   body .metodosDePago {
     -ms-grid-row: 1;
@@ -1200,7 +1203,7 @@ ul {
   color: #2c2727;
   -webkit-text-decoration: wavy;
           text-decoration: wavy;
-  font-family: 'Caveat', cursive;
+  font-family: arial;
   font-size: 20px;
   margin: 20px 30px 20px 30px;
 }
@@ -1252,13 +1255,13 @@ h3 {
   font-size: 20px;
   line-height: 1,8px;
   color: black;
-  font-family: 'Caveat', cursive;
+  font-family: arial;
   list-style: inherit;
 }
 
 footer {
   margin: 40px 45px 40px 45px;
-  font-family: 'Caveat', cursive;
+  font-family: arial;
 }
 
 .listaDentroRecuadro {
@@ -1363,7 +1366,7 @@ a:visited {
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  font-family: Arial, Helvetica;
+  font-family: Arial;
 }
 
 /* MOBILE!!!!!!! */
@@ -1807,6 +1810,9 @@ a:visited {
             flex-direction: column;
     margin: 25px 5px 10px 25px;
   }
+  .parrafoAdopcionesNuestras {
+    font-family: arial;
+  }
   .imagenesPerrosAdopciones {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1897,10 +1903,13 @@ a:visited {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    gap: 5px;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    gap: 5px;
   }
   .transitosFotos img {
     width: 300px;

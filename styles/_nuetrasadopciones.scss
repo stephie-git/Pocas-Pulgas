@@ -44,7 +44,7 @@ ul{
 /////*parrafo*/////
 .parrafoAdopcionesNuestras {
     @include parrafo;
-    font-family: 'Caveat', cursive;
+    font-family: arial;
     font-size: 20px;
     margin: 20px 30px 20px 30px;
     
@@ -97,7 +97,7 @@ h3 {
     font-size: 20px; 
     line-height: 1,8px; 
     color: black;
-    font-family: 'Caveat', cursive;
+    font-family: arial;
     list-style: inherit;
   }
 
@@ -105,7 +105,7 @@ h3 {
 /////*Estilo Footer*/////
     footer{
         margin: 40px 45px 40px 45px;
-        font-family: 'Caveat', cursive;
+        font-family: arial;
     }
 
 .listaDentroRecuadro {
