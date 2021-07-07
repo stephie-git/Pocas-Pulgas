@@ -12,43 +12,37 @@
     .itemsDonaciones{
         display:flex;
         flex-direction: column;
-
-        .liBody{
-            list-style:circle;
-
-        }
-
-        .metodosDePago{
-            font-size: 25px;
-            list-style:circle;
-        }
-       .mercadoPago{
-         width: 300px;
-         align-self: center;
-         
-        }
-
-        .cardsContainer{
-            display: flex;
-            gap: 30px;
-        } 
-
-
-        .card-title{
-            width: 100%;
-} 
-        .card-img-top{
-            height: 100%;
-            width: 100%;
-          }
-
-          .card-body{
-            width: 100%;
-          }
-       
     }
-     
+    .liBody{
+        list-style:circle;
 
+    }
+    .metodosDePago{
+        font-size: 25px;
+        list-style:circle;
+    }
+    .mercadoPago{
+        width: 300px;
+        align-self: center;
+        
+    }
+    .cardsContainer{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        justify-content:center;
+        gap: 30px;
+    } 
+    .card-title{
+        width: 100%;
+    } 
+    .card-img-top{
+        height: 100%;
+        width: 100%;
+    }
+        .card-body{
+        width: 100%;
+    }
 }
 
 
@@ -63,11 +57,13 @@
                 gap: 10px;
               }
 
-
              .cardsContainer{
                  display: flex;
+                 flex-direction:column;
+                 justify-content:center;
+                 align-items:center;
                  gap: 20px;
-             } 
+            } 
               
               .card-title{
                 width: 300px;
@@ -107,9 +103,7 @@
 
 
     }
-    .fotoGatito{
-        width:100px;
-    }
+    
     
 
 }
@@ -124,55 +118,49 @@
     #barraDesplegable{
         background-color: transparent;    
         }
-        body{
-    .itemsDonaciones {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: 1fr;
-        grid-template-areas: 'izquierda derecha';
-        margin-top: 80px;
-        margin-bottom: 80px;
-        font-family: 'Caveat', cursive;
-      
+    body{
+        .itemsDonaciones {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: 1fr;
+            grid-template-areas: 'izquierda derecha';
+            margin-top: 80px;
+            margin-bottom: 80px;
+            font-family: 'Caveat', cursive;
+        }
         .metodosDePago{
             grid-area: izquierda;
             margin: auto;
             font-size: 25px;
             list-style:circle;
         }
-       .mercadoPago{
-         grid-area: derecha;
-         width: 500px;
+        .mercadoPago{
+            grid-area: derecha;
+            width: 500px;
          
         }
-
         .cardsContainer div img {
-            min-height: 100px;
+            min-height: 200px;
             object-fit: cover;
             gap: 10px;
         }
-
-        .cardsContainer{
+         .cardsContainer{
             display: flex;
+            justify-content:center;
             gap: 20px;
-            width: 100%;
-
         } 
-           
-        .card-title{
-            width: 10px;
-        
-          }
           
-        .card-img-top{
-            height: 100px;
-            width: 400px;
+          .card-title{
+            width: 300px;
+            height: 5px;
+        }
+          
+          .card-img-top{
+            height: 300px;
+            width: 300px;
         }
 
-        .cardBody{
-            width: 500px;
-        }
     }
-    }
+    
 }
 

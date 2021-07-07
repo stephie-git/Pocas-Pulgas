@@ -10,50 +10,8 @@
 
 @media only screen and (max-width: 370px) {
 
-
-    #barraDesplegable{
-        display: flex;
-        justify-content: center;
-        align-self: center;
-        flex-direction: column;
-        margin: 15px 10px 10px 10px;
-    ul{
-        display: none;
-      }
-
-      input:checked  ~ ul{
-        display:block;
-      }
-      input {
-        display: none;
-      }
-
-      label {
-        box-sizing: border-box;
-        display: inline-block;
-        border: 1px solid black;
-        border-radius: 5px;
-        width: 30px;
-        height: 30px;
-        line-height: 30px;
-        font-weight: bold;
-        text-align: center;
-        user-select: none;
-      }
-
-      li {
-        display: block;
-        background: lightgrey;
-        margin: 0;
-        padding: 10px;
-        list-style: none;
-        border-bottom: 1px solid grey;
-      }
-
-    
-    }
-   
     .cabecera{
+      position:relative;
         background-image: url(../Imagenes/Mascotas.jpg);
         background-repeat: no-repeat;
         background-size: contain;
