@@ -107,7 +107,9 @@
 
 
     }
-    
+    .fotoGatito{
+        width:100px;
+    }
     
 
 }
@@ -145,23 +147,31 @@
         }
 
         .cardsContainer div img {
-            min-height: 200px;
+            min-height: 100px;
             object-fit: cover;
             gap: 10px;
-          }
-          
-          
-          .card-title{
-            width: 300px;
-            height: 5px;
-          }
-          
-          .card-img-top{
-            height: 400px;
-            width: 400px;
-     
         }
 
+        .cardsContainer{
+            display: flex;
+            gap: 20px;
+            width: 100%;
+
+        } 
+           
+        .card-title{
+            width: 10px;
+        
+          }
+          
+        .card-img-top{
+            height: 100px;
+            width: 400px;
+        }
+
+        .cardBody{
+            width: 500px;
+        }
     }
     }
 }

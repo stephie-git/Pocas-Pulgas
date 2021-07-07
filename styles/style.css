@@ -625,16 +625,6 @@ a:visited {
   color: #1d1b1b;
 }
 
-.cardsContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-}
-
 .tituloGracias {
   text-align: center;
   margin: 70px 5px 40px 5px;
@@ -740,6 +730,9 @@ a:visited {
         align-self: center;
     width: 400px;
   }
+  .fotoGatito {
+    width: 100px;
+  }
 }
 
 @media only screen and (min-width: 962px) {
@@ -774,18 +767,27 @@ a:visited {
     width: 500px;
   }
   body .itemsDonaciones .cardsContainer div img {
-    min-height: 200px;
+    min-height: 100px;
     -o-object-fit: cover;
        object-fit: cover;
     gap: 10px;
   }
+  body .itemsDonaciones .cardsContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 20px;
+    width: 100%;
+  }
   body .itemsDonaciones .card-title {
-    width: 300px;
-    height: 5px;
+    width: 10px;
   }
   body .itemsDonaciones .card-img-top {
-    height: 400px;
+    height: 100px;
     width: 400px;
+  }
+  body .itemsDonaciones .cardBody {
+    width: 500px;
   }
 }
 
