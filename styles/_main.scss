@@ -1,12 +1,16 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica;
-    background-color: cadetblue;
+ 
   }
 
 
  /*barra desplegable*/
 
+ nav{
+    background-color: transparent; 
+
+ }
     .enlaces {
       /*para que se ponga en linea*/
       display:inline;
@@ -28,7 +32,7 @@ a:visited{
 /*cuerpo de la pagina*/
 
 body {
-    background-color: cadetblue;
+    
     background-size: 1400px;
     background-repeat: no-repeat;
 }

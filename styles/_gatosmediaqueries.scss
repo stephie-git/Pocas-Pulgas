@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica;
-    background-color: cadetblue;
+ 
   }
 
 
@@ -107,8 +107,11 @@
 
 /* TABLET !!!!!*/
 @media only screen and (min-width: 371px) and (max-width: 961px) {
+
+
+    
     body{
-        background-color:blue;
+      
 
         .gatosEnAdopcion {
             display: flex;
@@ -212,13 +215,13 @@
 
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px){
+
+    /*Barra desplegable de perros y gatos*/
+    #barraDesplegable{
+        background-color: transparent;    
+        }
     body{
-        background-color: $backgroundLila;
-
-
-
-
-
+      
 
         /*Fotos de gatos en adopcion aplicadas con Grid*/
 

@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica;
-    background-color: cadetblue;
+    
   }
 
 
@@ -106,36 +106,9 @@
 
 
 
-
-
-
-
-
-
-
-
-
-
     }
     
     
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -144,6 +117,12 @@
 
 
 @media only screen and (min-width: 962px){
+
+    /*Barra desplegable de perros y gatos*/
+    #barraDesplegable{
+        background-color: transparent;    
+        }
+        body{
     .itemsDonaciones {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
@@ -161,7 +140,7 @@
         }
        .mercadoPago{
          grid-area: derecha;
-         width: 200px;
+         width: 500px;
          
         }
 
@@ -178,9 +157,12 @@
           }
           
           .card-img-top{
-            height: 200px;
-            width: 200px;
-          }
+            height: 400px;
+            width: 400px;
+     
+        }
+
+    }
     }
 }
 

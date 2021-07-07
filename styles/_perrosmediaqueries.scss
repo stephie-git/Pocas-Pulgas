@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
     font-family: Arial, Helvetica;
-    background-color: cadetblue;
+
   }
 
 
@@ -105,7 +105,9 @@
 @media only screen and (min-width: 371px) and (max-width: 961px) {
     
     /*Barra desplegable de perros y gatos*/
-
+    #barraDesplegable{
+        background-color: cadetblue;
+    }
     body{
         
             background-color: cadetblue;
@@ -140,11 +142,28 @@
 
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px){
-    body{
-        background-color: $backgroundLila;
+    
+/*Barra desplegable de perros y gatos*/
+   
 
-
+    .enlaces {
+        /*para que se ponga en linea*/
+        display:inline;
+        color:$colorVisited;
+        font-size: $textoEnlaces;
+        font-style: italic;
+        font-family: 'Rubik', sans-serif;
+        word-spacing: 60px;
+        letter-spacing: 5px;
+        margin: auto 35px;
         
+  }
+  
+  a:visited{
+      color: $colorVisited;
+  }
+    
+    body{
         .perrosEnAdopcion {
          width: 100%;
         display: grid;

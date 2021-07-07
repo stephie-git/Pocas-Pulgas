@@ -3,10 +3,13 @@
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica;
-  background-color: cadetblue;
 }
 
 /*barra desplegable*/
+nav {
+  background-color: transparent;
+}
+
 .enlaces {
   /*para que se ponga en linea*/
   display: inline;
@@ -25,7 +28,6 @@ a:visited {
 
 /*cuerpo de la pagina*/
 body {
-  background-color: cadetblue;
   background-size: 1400px;
   background-repeat: no-repeat;
 }
@@ -371,24 +373,6 @@ ul {
   margin: 20px 30px 20px 30px;
 }
 
-/*imagen*/
-.perrito {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-}
-
-.perrito .fotoPerrito {
-  width: 450px;
-}
-
-.perrito .fotoGatito {
-  width: 490px;
-}
-
 footer {
   margin: 40px 45px 40px 45px;
   text-align: center;
@@ -446,7 +430,119 @@ a:visited {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica;
-  background-color: cadetblue;
+}
+
+/* MOBILE!!!!!!! */
+@media only screen and (max-width: 370px) {
+  #barraDesplegable {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 15px 10px 10px 10px;
+  }
+  #barraDesplegable ul {
+    display: none;
+  }
+  #barraDesplegable input:checked ~ ul {
+    display: block;
+  }
+  #barraDesplegable input {
+    display: none;
+  }
+  #barraDesplegable label {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 5px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    font-weight: bold;
+    text-align: center;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  #barraDesplegable li {
+    display: block;
+    background: lightgrey;
+    margin: 0;
+    padding: 10px;
+    list-style: none;
+    border-bottom: 1px solid grey;
+  }
+  .cabecera {
+    background-image: url(../Imagenes/Mascotas.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 80%;
+    max-width: 80%;
+    color: azure;
+  }
+  .cabecera .logo {
+    width: 20%;
+    height: 20%;
+    margin: 2px 70px 5px 2px;
+  }
+  /*imagen*/
+  .perrito {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .perrito .fotoPerrito {
+    width: 100px;
+  }
+  .perrito .fotoGatito {
+    width: 100px;
+  }
+  .perrito .importanciaCatraciones {
+    font-size: 25px;
+  }
+}
+
+/* TABLET !!!!!*/
+/* ESCRITORIO / DESKTOP!!!!! */
+@media only screen and (min-width: 962px) {
+  /*imagen*/
+  .perrito {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .perrito .fotoPerrito {
+    width: 450px;
+  }
+  .perrito .fotoGatito {
+    width: 490px;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: Arial, Helvetica;
 }
 
 .bodyDonaciones {
@@ -549,7 +645,6 @@ a:visited {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica;
-  background-color: cadetblue;
 }
 
 /* MOBILE!!!!!!! */
@@ -648,7 +743,11 @@ a:visited {
 }
 
 @media only screen and (min-width: 962px) {
-  .itemsDonaciones {
+  /*Barra desplegable de perros y gatos*/
+  #barraDesplegable {
+    background-color: transparent;
+  }
+  body .itemsDonaciones {
     display: -ms-grid;
     display: grid;
     -ms-grid-columns: (1fr)[2];
@@ -660,7 +759,7 @@ a:visited {
     margin-bottom: 80px;
     font-family: 'Caveat', cursive;
   }
-  .itemsDonaciones .metodosDePago {
+  body .itemsDonaciones .metodosDePago {
     -ms-grid-row: 1;
     -ms-grid-column: 1;
     grid-area: izquierda;
@@ -668,25 +767,25 @@ a:visited {
     font-size: 25px;
     list-style: circle;
   }
-  .itemsDonaciones .mercadoPago {
+  body .itemsDonaciones .mercadoPago {
     -ms-grid-row: 1;
     -ms-grid-column: 2;
     grid-area: derecha;
-    width: 200px;
+    width: 500px;
   }
-  .itemsDonaciones .cardsContainer div img {
+  body .itemsDonaciones .cardsContainer div img {
     min-height: 200px;
     -o-object-fit: cover;
        object-fit: cover;
     gap: 10px;
   }
-  .itemsDonaciones .card-title {
+  body .itemsDonaciones .card-title {
     width: 300px;
     height: 5px;
   }
-  .itemsDonaciones .card-img-top {
-    height: 200px;
-    width: 200px;
+  body .itemsDonaciones .card-img-top {
+    height: 400px;
+    width: 400px;
   }
 }
 
@@ -1235,7 +1334,6 @@ a:visited {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica;
-  background-color: cadetblue;
 }
 
 /* MOBILE!!!!!!! */
@@ -1673,8 +1771,11 @@ a:visited {
 
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px) {
+  /*Barra desplegable de perros y gatos*/
+  #barraDesplegable {
+    background-color: transparent;
+  }
   body {
-    background-color: cadetblue;
     /*estilos para mi parrafo*/
     /*Transiciones*/
   }
@@ -1699,6 +1800,20 @@ a:visited {
         align-self: center;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+  body .enlaces {
+    /*para que se ponga en linea*/
+    display: inline;
+    color: #1d1b1b;
+    font-size: #160532;
+    font-style: italic;
+    font-family: 'Rubik', sans-serif;
+    word-spacing: 60px;
+    letter-spacing: 5px;
+    margin: auto 35px;
+  }
+  body a:visited {
+    color: #1d1b1b;
   }
   body .cabecera {
     display: -webkit-box;
@@ -1874,7 +1989,6 @@ a:visited {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica;
-  background-color: cadetblue;
 }
 
 /* MOBILE!!!!!!! */
@@ -1975,9 +2089,6 @@ a:visited {
 
 /* TABLET !!!!!*/
 @media only screen and (min-width: 371px) and (max-width: 961px) {
-  body {
-    background-color: blue;
-  }
   body .gatosEnAdopcion {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -2090,8 +2201,11 @@ a:visited {
 
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px) {
+  /*Barra desplegable de perros y gatos*/
+  #barraDesplegable {
+    background-color: transparent;
+  }
   body {
-    background-color: cadetblue;
     /*Fotos de gatos en adopcion aplicadas con Grid*/
   }
   body .gatosEnAdopcion {
@@ -2118,7 +2232,6 @@ a:visited {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: Arial, Helvetica;
-  background-color: cadetblue;
 }
 
 /* MOBILE!!!!!!! */
@@ -2223,6 +2336,9 @@ a:visited {
 /* TABLET !!!!!*/
 @media only screen and (min-width: 371px) and (max-width: 961px) {
   /*Barra desplegable de perros y gatos*/
+  #barraDesplegable {
+    background-color: cadetblue;
+  }
   body {
     background-color: cadetblue;
   }
@@ -2255,8 +2371,20 @@ a:visited {
 
 /* ESCRITORIO / DESKTOP!!!!! */
 @media only screen and (min-width: 962px) {
-  body {
-    background-color: cadetblue;
+  /*Barra desplegable de perros y gatos*/
+  .enlaces {
+    /*para que se ponga en linea*/
+    display: inline;
+    color: #1d1b1b;
+    font-size: #160532;
+    font-style: italic;
+    font-family: 'Rubik', sans-serif;
+    word-spacing: 60px;
+    letter-spacing: 5px;
+    margin: auto 35px;
+  }
+  a:visited {
+    color: #1d1b1b;
   }
   body .perrosEnAdopcion {
     width: 100%;
